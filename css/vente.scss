@@ -29,22 +29,29 @@ body {
         // Navbar
         .navbarContainer {
             background-color: #000;
-
             div {
                 justify-content: space-between;
-
                 img {
                     width: 10%;
-
                 }
-
                 nav {
                     width: 50%;
-
                     ul {
                         display: flex;
                         justify-content: space-around;
-
+                        li{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                .navIcons{
+                    display: flex;
+                    gap: 1.5em;
+                    a{
+                        svg{
+                            width: 5vh;
+                            height: 5vh;
+                        }
                     }
                 }
             }
@@ -76,7 +83,7 @@ body {
         }
         // section besoin
         .besoin{
-            height: 50vh;
+            height: 70vh;
             display: flex;
             align-items: center;
             .itemBesoin{
@@ -92,7 +99,46 @@ body {
                     margin-top: 2vh;
                     font-size: 1.3rem;
                     width: 40%;
-
+                }
+            }
+        }
+        // Section raquette
+        .raquette{
+            .raquetteContainer{
+                padding-top: 5vh;
+                flex-wrap: wrap;
+                gap: 10em 15em;
+                // produit
+                .produit{
+                    background-color: #000;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 40%;
+                    padding: 2vh;
+                    border-radius: 8vh;
+                    img{
+                        width: 40%;
+                    }
+                    .textProduit{
+                        color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        width: 50%;
+                        padding-top: 2vh; 
+                        gap: 3rem 0;
+                        font-size: 1.3rem;
+                        button{
+                            margin-top: 5vh;
+                            text-align: center;
+                            width: 50%;
+                            padding: 2vh 2vh;
+                            border-radius: 8vh;
+                            background-color: #D7FF55;
+                            align-self: end;
+                            font-size: 1rem;
+                        }
+                    }
                 }
             }
         }

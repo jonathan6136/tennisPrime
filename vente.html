@@ -23,21 +23,10 @@
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
+                <!-- NavIcon -->
                 <div class="navIcons">
-                    <a href=""><i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-user-round-icon lucide-user-round">
-                                <circle cx="12" cy="8" r="5" />
-                                <path d="M20 21a8 8 0 0 0-16 0" />
-                            </svg></i></a>
-                    <a href=""><i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart">
-                                <circle cx="8" cy="21" r="1" />
-                                <circle cx="19" cy="21" r="1" />
-                                <path
-                                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-                            </svg></i></a>
+                    <a href=""><i data-lucide="user-round"></i></a>
+                    <a href=""><i data-lucide="shopping-cart"></i></a>
                 </div>
             </div>
         </div>
@@ -58,7 +47,7 @@
             <div class="itemBesoin">
                 <img src="img/Vêtement.png" alt="Un t-shirt pour le tennis">
                 <p>Vêtement</p>
-            </div>    
+            </div>
             <div class="itemBesoin">
                 <img src="img/Chaussure.png" alt="Une chaussure pour le tennis">
                 <p>Chaussures de tennis</p>
@@ -68,10 +57,53 @@
                 <p>Sac de tennis</p>
             </div>
             <div class="itemBesoin">
-                <img src="img/Balle.png" alt="Un sceau avec plein de balles de tennis dont 3 qui sont en dehors du sceau">
+                <img src="img/Balle.png"
+                    alt="Un sceau avec plein de balles de tennis dont 3 qui sont en dehors du sceau">
                 <p>Balle de tennis</p>
             </div>
         </section>
+        <!-- section raquette -->
+        <section class="raquette">
+            <!-- field raquette -->
+            <div class="field center">
+                <h6>Raquettes de Tennis</h6>
+            </div>
+            <!-- raquetteContainer -->
+            <div class="raquetteContainer marge center">
+                <div class="produit">
+                    <img src="img/Raquette1.png" alt="">
+                    <div class="textProduit">
+                        <p>Babolat Pure Drive</p>
+                        <button>181€</button>
+                    </div>
+                </div>
+                <div class="produit">
+                    <img src="img/Raquette2.png" alt="">
+                    <div class="textProduit">
+                        <p>HEAD Speed MP Legend 2025</p>
+                        <button>202€</button>
+                    </div>
+                </div>
+                <div class="produit">
+                    <img src="img/Raquette3.png" alt="">
+                    <div class="textProduit">
+                        <p>Babolat Pure Aero Team</p>
+                        <button>174€</button>
+                    </div>
+                </div>
+                <div class="produit">
+                    <img src="img/Raquette4.png" alt="">
+                    <div class="textProduit">
+                        <p>HEAD Speed Pro 2024</p>
+                        <button>131€</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>

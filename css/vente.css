@@ -35,6 +35,17 @@ body main .navbarContainer div nav ul {
   display: flex;
   justify-content: space-around;
 }
+body main .navbarContainer div nav ul li {
+  font-size: 1.5rem;
+}
+body main .navbarContainer div .navIcons {
+  display: flex;
+  gap: 1.5em;
+}
+body main .navbarContainer div .navIcons a svg {
+  width: 5vh;
+  height: 5vh;
+}
 body main header {
   height: 80vh;
   background-image: url(../img/Slideshow_8_d21605d8-9904-40b9-b4cf-f2e20fc0115b.webp);
@@ -58,7 +69,7 @@ body main .field h6 {
   font-size: 2.3rem;
 }
 body main .besoin {
-  height: 50vh;
+  height: 70vh;
   display: flex;
   align-items: center;
 }
@@ -76,4 +87,40 @@ body main .besoin .itemBesoin p {
   margin-top: 2vh;
   font-size: 1.3rem;
   width: 40%;
+}
+body main .raquette .raquetteContainer {
+  padding-top: 5vh;
+  flex-wrap: wrap;
+  gap: 10em 15em;
+}
+body main .raquette .raquetteContainer .produit {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding: 2vh;
+  border-radius: 8vh;
+}
+body main .raquette .raquetteContainer .produit img {
+  width: 40%;
+}
+body main .raquette .raquetteContainer .produit .textProduit {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+  padding-top: 2vh;
+  gap: 3rem 0;
+  font-size: 1.3rem;
+}
+body main .raquette .raquetteContainer .produit .textProduit button {
+  margin-top: 5vh;
+  text-align: center;
+  width: 50%;
+  padding: 2vh 2vh;
+  border-radius: 8vh;
+  background-color: #D7FF55;
+  align-self: end;
+  font-size: 1rem;
 }/*# sourceMappingURL=vente.css.map */
