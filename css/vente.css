@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.marge {
+  padding: 0vh 10vh;
+}
+
+body main .navbarContainer {
+  background-color: #000;
+}
+body main .navbarContainer div {
+  justify-content: space-between;
+}
+body main .navbarContainer div img {
+  width: 10%;
+}
+body main .navbarContainer div nav {
+  width: 50%;
+}
+body main .navbarContainer div nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+body main header {
+  height: 80vh;
+  background-image: url(../img/Slideshow_8_d21605d8-9904-40b9-b4cf-f2e20fc0115b.webp);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+body main header h1 {
+  color: #D7FF55;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: end;
+  width: 60%;
+}
+body main .field {
+  padding: 3vh 0;
+  background-color: #000;
+}
+body main .field h6 {
+  color: #fff;
+  font-size: 2.3rem;
+}
+body main .besoin {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+body main .besoin .itemBesoin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body main .besoin .itemBesoin img {
+  width: 50%;
+}
+body main .besoin .itemBesoin p {
+  margin-top: 2vh;
+  font-size: 1.3rem;
+  width: 40%;
+}/*# sourceMappingURL=vente.css.map */

@@ -1,0 +1,100 @@
+// Reset
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// center
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// les a
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+// class marge
+.marge {
+    padding: 0vh 10vh;
+}
+
+// body
+body {
+    main {
+        // Navbar
+        .navbarContainer {
+            background-color: #000;
+
+            div {
+                justify-content: space-between;
+
+                img {
+                    width: 10%;
+
+                }
+
+                nav {
+                    width: 50%;
+
+                    ul {
+                        display: flex;
+                        justify-content: space-around;
+
+                    }
+                }
+            }
+        }
+        // header
+        header{
+            height: 80vh;
+            background-image: url(../img/Slideshow_8_d21605d8-9904-40b9-b4cf-f2e20fc0115b.webp);
+            background-position: center;
+            background-repeat: none;
+            background-size: cover;
+
+            h1{
+                color: #D7FF55;
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                text-align: end;
+                width: 60%;
+            }
+        }
+        // field besoin
+        .field{
+            padding: 3vh 0;
+            background-color: #000;
+            h6{
+                color: #fff;
+                font-size: 2.3rem;
+            }
+        }
+        // section besoin
+        .besoin{
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            .itemBesoin{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 50%;
+                }
+                text-align: center; 
+                p{
+                    margin-top: 2vh;
+                    font-size: 1.3rem;
+                    width: 40%;
+
+                }
+            }
+        }
+    }
+}
