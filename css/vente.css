@@ -278,4 +278,47 @@ body main footer .copyright a {
   body main .produit .produitContainer .produitArticle .textProduit button {
     font-size: 0.7rem;
   }
+}
+@media screen and (max-width: 425px) {
+  body main .navbarContainer {
+    justify-content: space-around;
+  }
+  body main .navbarContainer #toggle {
+    top: 4.9vh;
+  }
+  body main .navbarContainer div img {
+    width: 20%;
+  }
+  body main header {
+    height: 40vh;
+  }
+  body main header h1 {
+    font-size: 1rem;
+  }
+  body main .field {
+    padding: 2vh 0;
+  }
+  body main .field h6 {
+    font-size: 1rem;
+  }
+  body main .besoin {
+    padding: 5vh 0;
+    gap: 4em;
+  }
+  body main .besoin .itemBesoin {
+    width: 40%;
+  }
+  body main .besoin .itemBesoin p {
+    font-size: 0.7rem;
+  }
+  body main .produit .produitContainer {
+    flex-direction: column;
+    gap: 2em;
+  }
+  body main .produit .produitContainer .produitArticle {
+    width: 60%;
+  }
+  body main .produit .produitContainer .produitArticle .textProduit p {
+    font-size: 0.7em;
+  }
 }/*# sourceMappingURL=vente.css.map */

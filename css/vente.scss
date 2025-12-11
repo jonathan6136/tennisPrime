@@ -28,6 +28,7 @@ a {
 // body
 body {
     font-family: "Roboto", sans-serif;
+
     main {
 
         // Navbar
@@ -366,6 +367,7 @@ body {
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 2em;
+
                 .itemBesoin {
                     width: 30%;
 
@@ -374,14 +376,16 @@ body {
                     }
                 }
             }
-            .produit{
-                .produitContainer{
-                    .produitArticle{
-                        .textProduit{
-                            p{
+
+            .produit {
+                .produitContainer {
+                    .produitArticle {
+                        .textProduit {
+                            p {
                                 font-size: 1rem;
                             }
-                            button{
+
+                            button {
                                 font-size: 0.7rem;
                             }
                         }
@@ -390,4 +394,62 @@ body {
             }
         }
     }
+}
+
+// Breakpoint 425px
+@media screen and (max-width: 425px) {
+    body {
+        main {
+            .navbarContainer {
+                #toggle{
+                    top: 4.9vh;
+                }
+                
+                justify-content: space-around;
+                div {
+                    img {
+                        width: 20%;
+                    }
+                }
+            }
+             header {
+                height: 40vh;
+
+                h1 {
+                    font-size: 1rem;
+                }
+            }
+            .field{
+                padding: 2vh 0;
+                h6{
+                    font-size: 1rem;
+                }
+            }
+            .besoin{
+                padding: 5vh 0;
+                gap: 4em;
+                .itemBesoin{
+                    width: 40%;
+                    p{
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+            .produit{
+                .produitContainer{
+                    flex-direction: column;
+                    gap: 2em;
+                    .produitArticle{
+                        width: 60%;
+                        .textProduit{
+                            p{
+                                font-size: 0.7em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
