@@ -39,16 +39,16 @@ body {
                     ul {
                         display: flex;
                         justify-content: space-around;
-                        li{
+                        li {
                             font-size: 1.5rem;
                         }
                     }
                 }
-                .navIcons{
+                .navIcons {
                     display: flex;
                     gap: 1.5em;
-                    a{
-                        svg{
+                    a {
+                        svg {
                             width: 5vh;
                             height: 5vh;
                         }
@@ -57,14 +57,13 @@ body {
             }
         }
         // header
-        header{
+        header {
             height: 80vh;
             background-image: url(../img/Slideshow_8_d21605d8-9904-40b9-b4cf-f2e20fc0115b.webp);
             background-position: center;
             background-repeat: none;
             background-size: cover;
-
-            h1{
+            h1 {
                 color: #D7FF55;
                 font-size: 2.5rem;
                 text-transform: uppercase;
@@ -73,29 +72,29 @@ body {
             }
         }
         // field besoin
-        .field{
+        .field {
             padding: 3vh 0;
             background-color: #000;
-            h6{
+            h6 {
                 color: #fff;
                 font-size: 2.3rem;
             }
         }
         // section besoin
-        .besoin{
+        .besoin {
             height: 70vh;
             display: flex;
             align-items: center;
-            .itemBesoin{
+            .itemBesoin {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                img{
+                img {
                     width: 50%;
                 }
-                text-align: center; 
-                p{
+                text-align: center;
+                p {
                     margin-top: 2vh;
                     font-size: 1.3rem;
                     width: 40%;
@@ -103,25 +102,25 @@ body {
             }
         }
         // Section raquette
-        .produit{
-            .produitContainer{
+        .produit {
+            .produitContainer {
                 padding: 7vh 0;
                 flex-wrap: wrap;
                 // justify-content: space-between;
                 gap: 5em 5em;
                 // produit
-                .produitArticle{
+                .produitArticle {
                     background-color: #000;
                     display: flex;
                     justify-content: space-between;
                     width: 40%;
                     padding: 2vh;
                     border-radius: 8vh;
-                    img{
+                    img {
                         width: 40%;
                         margin-left: 2.5vh;
                     }
-                    .textProduit{
+                    .textProduit {
                         color: #fff;
                         display: flex;
                         flex-direction: column;
@@ -129,7 +128,7 @@ body {
                         width: 55%;
                         padding-top: 2vh;
                         font-size: 1.3rem;
-                        button{
+                        button {
                             margin-top: 15vh;
                             margin-right: 2vh;
                             text-align: center;
@@ -141,11 +140,39 @@ body {
                             font-size: 1rem;
                             cursor: pointer;
                             transition: 1s;
-                            &:hover{
+                            &:hover {
                                 background-color: #729307;
                             }
                         }
                     }
+                }
+            }
+        }
+        footer {
+            background-color: #000;
+            padding-top: 5vh;
+            .iconFooter {
+                display: flex;
+                justify-content: center;
+                gap: 2em;
+                svg {
+                    fill: #000;
+                    stroke: #fff;
+                    width: 3vh;
+                    height: 3vh;
+                    cursor: pointer;
+                }
+            }
+            .copyright {
+                a {
+                    display: flex;
+                    justify-content: center;
+                    margin: 2vh 5vh;
+                    margin-bottom: 2vh 5vh;
+                    text-decoration: none;
+                    text-align: center;
+                    color: #fff;
+                    padding: 2vh;
                 }
             }
         }

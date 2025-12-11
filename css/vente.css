@@ -129,4 +129,30 @@ body main .produit .produitContainer .produitArticle .textProduit button {
 }
 body main .produit .produitContainer .produitArticle .textProduit button:hover {
   background-color: #729307;
+}
+body main footer {
+  background-color: #000;
+  padding-top: 5vh;
+}
+body main footer .iconFooter {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+body main footer .iconFooter svg {
+  fill: #000;
+  stroke: #fff;
+  width: 3vh;
+  height: 3vh;
+  cursor: pointer;
+}
+body main footer .copyright a {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 5vh;
+  margin-bottom: 2vh 5vh;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: 2vh;
 }/*# sourceMappingURL=vente.css.map */
