@@ -103,13 +103,14 @@ body {
             }
         }
         // Section raquette
-        .raquette{
-            .raquetteContainer{
-                padding-top: 5vh;
+        .produit{
+            .produitContainer{
+                padding: 7vh 0;
                 flex-wrap: wrap;
-                gap: 10em 15em;
+                // justify-content: space-between;
+                gap: 5em 5em;
                 // produit
-                .produit{
+                .produitArticle{
                     background-color: #000;
                     display: flex;
                     justify-content: space-between;
@@ -124,12 +125,12 @@ body {
                         display: flex;
                         flex-direction: column;
                         text-align: center;
-                        width: 50%;
-                        padding-top: 2vh; 
-                        gap: 3rem 0;
+                        width: 55%;
+                        padding-top: 2vh;
                         font-size: 1.3rem;
                         button{
-                            margin-top: 5vh;
+                            margin-top: 15vh;
+                            margin-right: 2vh;
                             text-align: center;
                             width: 50%;
                             padding: 2vh 2vh;
@@ -137,6 +138,11 @@ body {
                             background-color: #D7FF55;
                             align-self: end;
                             font-size: 1rem;
+                            cursor: pointer;
+                            transition: 1s;
+                            &:hover{
+                                background-color: #729307;
+                            }
                         }
                     }
                 }

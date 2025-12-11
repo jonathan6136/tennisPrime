@@ -88,12 +88,12 @@ body main .besoin .itemBesoin p {
   font-size: 1.3rem;
   width: 40%;
 }
-body main .raquette .raquetteContainer {
-  padding-top: 5vh;
+body main .produit .produitContainer {
+  padding: 7vh 0;
   flex-wrap: wrap;
-  gap: 10em 15em;
+  gap: 5em 5em;
 }
-body main .raquette .raquetteContainer .produit {
+body main .produit .produitContainer .produitArticle {
   background-color: #000;
   display: flex;
   justify-content: space-between;
@@ -101,21 +101,21 @@ body main .raquette .raquetteContainer .produit {
   padding: 2vh;
   border-radius: 8vh;
 }
-body main .raquette .raquetteContainer .produit img {
+body main .produit .produitContainer .produitArticle img {
   width: 40%;
 }
-body main .raquette .raquetteContainer .produit .textProduit {
+body main .produit .produitContainer .produitArticle .textProduit {
   color: #fff;
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 50%;
+  width: 55%;
   padding-top: 2vh;
-  gap: 3rem 0;
   font-size: 1.3rem;
 }
-body main .raquette .raquetteContainer .produit .textProduit button {
-  margin-top: 5vh;
+body main .produit .produitContainer .produitArticle .textProduit button {
+  margin-top: 15vh;
+  margin-right: 2vh;
   text-align: center;
   width: 50%;
   padding: 2vh 2vh;
@@ -123,4 +123,9 @@ body main .raquette .raquetteContainer .produit .textProduit button {
   background-color: #D7FF55;
   align-self: end;
   font-size: 1rem;
+  cursor: pointer;
+  transition: 1s;
+}
+body main .produit .produitContainer .produitArticle .textProduit button:hover {
+  background-color: #729307;
 }/*# sourceMappingURL=vente.css.map */
