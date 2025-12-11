@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marge {
+  padding: 0 10vh;
+}
+
+.Accueil {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+}
+.Accueil img {
+  width: 10%;
+}
+.Accueil nav {
+  background-color: #000;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.Accueil nav ul {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+}
+.Accueil nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.Accueil .icone a {
+  color: #fff;
+  gap: 2em;
+}
+
+header {
+  background-image: url("/image/19735-balle_de_tennis-raquette-balles_de_tennis-4000x2667.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+header h1 {
+  color: #D7FF55;
+  height: 20vh;
+  width: 100%;
+  padding: 15vh 10vh;
+}
+
+.actualite {
+  background-color: #000;
+  color: #fff;
+}
+.actualite .actualiteContainer {
+  display: flex;
+  padding: 0 10vh;
+}
+.actualite .actualiteContainer p {
+  margin: 5vh 2vh;
+}
+.actualite .match {
+  display: flex;
+  padding: 0 10vh;
+}
+.actualite .match p {
+  margin: 2vh 2vh;
+}
+.actualite .tournoi {
+  display: flex;
+  padding: 0 10vh;
+  padding: 2vh;
+}
+.actualite .tournoi p {
+  padding: 0 10vh;
+}
+.actualite .image {
+  display: flex;
+  justify-content: center;
+  padding: 2vh;
+  gap: 2em;
+}
+.actualite .image img {
+  width: 15%;
+}
+.actualite .btn {
+  display: flex;
+  padding: 0 10vh;
+}
+.actualite .btn a {
+  color: #000;
+  background-color: #D7FF55;
+  padding: 1vh;
+  border-radius: 2vh;
+  text-decoration: none;
+  margin: 1vh 1vh;
+  margin-bottom: 2vh;
+}
+.actualite .classement {
+  display: flex;
+  padding: 0 10vh;
+}
+.actualite .classement p {
+  margin: 3vh;
+}
+
+footer {
+  background-color: #000;
+}
+footer .footer {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+footer .footer svg {
+  fill: #000;
+  stroke: #fff;
+  width: 3vh;
+  height: 3vh;
+}
+footer .copyright a {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 5vh;
+  margin-bottom: 2vh 5vh;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: 2vh;
+}/*# sourceMappingURL=actualite.css.map */
