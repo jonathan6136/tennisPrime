@@ -103,6 +103,7 @@ body main .produit .produitContainer .produitArticle {
 }
 body main .produit .produitContainer .produitArticle img {
   width: 40%;
+  margin-left: 2.5vh;
 }
 body main .produit .produitContainer .produitArticle .textProduit {
   color: #fff;
