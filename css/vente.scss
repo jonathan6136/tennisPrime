@@ -1,4 +1,6 @@
 // Reset
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -25,28 +27,42 @@ a {
 
 // body
 body {
+    font-family: "Roboto", sans-serif;
     main {
+
         // Navbar
         .navbarContainer {
             background-color: #000;
+
             div {
                 justify-content: space-between;
+
                 img {
                     width: 10%;
                 }
+
                 nav {
-                    width: 50%;
+                    width: 70%;
+                    display: flex;
+                    justify-content: center;
+
                     ul {
                         display: flex;
-                        justify-content: space-around;
+                        justify-content: space-between;
+                        width: 70%;
+
                         li {
-                            font-size: 1.5rem;
+                            a {
+                                font-size: 1.5rem;
+                            }
                         }
                     }
                 }
+
                 .navIcons {
                     display: flex;
                     gap: 1.5em;
+
                     a {
                         svg {
                             width: 5vh;
@@ -56,6 +72,7 @@ body {
                 }
             }
         }
+
         // header
         header {
             height: 80vh;
@@ -63,6 +80,7 @@ body {
             background-position: center;
             background-repeat: none;
             background-size: cover;
+
             h1 {
                 color: #D7FF55;
                 font-size: 2.5rem;
@@ -71,29 +89,36 @@ body {
                 width: 60%;
             }
         }
+
         // field besoin
         .field {
             padding: 3vh 0;
             background-color: #000;
+
             h6 {
                 color: #fff;
                 font-size: 2.3rem;
             }
         }
+
         // section besoin
         .besoin {
             padding: 15vh 0;
             display: flex;
             align-items: center;
+
             .itemBesoin {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
                 img {
                     width: 50%;
                 }
+
                 text-align: center;
+
                 p {
                     margin-top: 2vh;
                     font-size: 1.3rem;
@@ -101,12 +126,14 @@ body {
                 }
             }
         }
+
         // Section produit
         .produit {
             .produitContainer {
                 padding: 7vh 0;
                 flex-wrap: wrap;
                 gap: 5em;
+
                 // produitArticle
                 .produitArticle {
                     background-color: #000;
@@ -115,10 +142,12 @@ body {
                     width: 40%;
                     padding: 2vh;
                     border-radius: 8vh;
+
                     img {
                         width: 40%;
                         margin-left: 2.5vh;
                     }
+
                     .textProduit {
                         color: #fff;
                         display: flex;
@@ -128,6 +157,7 @@ body {
                         width: 55%;
                         padding-top: 2vh;
                         font-size: 1.3rem;
+
                         button {
                             margin-right: 2vh;
                             text-align: center;
@@ -139,6 +169,7 @@ body {
                             font-size: 1rem;
                             cursor: pointer;
                             transition: 1s;
+
                             &:hover {
                                 background-color: #729307;
                             }
@@ -147,14 +178,17 @@ body {
                 }
             }
         }
+
         // footer
         footer {
             background-color: #000;
             padding-top: 5vh;
+
             .iconFooter {
                 display: flex;
                 justify-content: center;
                 gap: 2em;
+
                 svg {
                     fill: #000;
                     stroke: #fff;
@@ -163,12 +197,11 @@ body {
                     cursor: pointer;
                 }
             }
+
             .copyright {
                 a {
                     display: flex;
                     justify-content: center;
-                    margin: 2vh 5vh;
-                    margin-bottom: 2vh 5vh;
                     text-decoration: none;
                     text-align: center;
                     color: #fff;
@@ -178,38 +211,181 @@ body {
         }
     }
 }
+
 // Breakpoint 1024px
-@media screen and (max-width: 1024px){
-    body{
-        main{
-            .navbarContainer{
-                div{
-                    img{
+@media screen and (max-width: 1024px) {
+    body {
+        main {
+            .navbarContainer {
+                div {
+                    img {
                         width: 7%;
                     }
-                    nav{
-                        ul{
-                            li{
-                                font-size: 1rem;
+
+                    nav {
+                        ul {
+                            li {
+                                a {
+                                    font-size: 1rem;
+                                }
                             }
                         }
                     }
-                    .navIcons{
-                        a svg{
+
+                    .navIcons {
+                        a svg {
                             width: 4vh;
                             height: 4vh;
                         }
                     }
                 }
             }
-            .field{
-                h6{
+
+            .field {
+                h6 {
                     font-size: 1.7rem;
                 }
             }
+
             .textProduit {
-                p{
+                p {
                     font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+// Breakpoint 768px
+@media screen and (max-width: 768px) {
+    body {
+        main {
+            .navbarContainer {
+                nav {
+                    display: none;
+                }
+
+                #toggle {
+                    position: fixed;
+                    display: block;
+                    width: 4vh;
+                    height: .3vh;
+                    top: 3.5vh;
+                    right: 2.5vh;
+                    cursor: pointer;
+                    background-color: #fff;
+                    z-index: 999;
+
+                    &:before,
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 4vh;
+                        height: .3vh;
+                        background-color: #fff;
+                    }
+
+                    &:before {
+                        top: -.9vh;
+                    }
+
+                    &:after {
+                        top: .9vh;
+                    }
+                }
+
+                #toggle.active {
+                    background-color: transparent;
+
+                    &::before {
+                        transform: rotate(45deg);
+                        top: 0;
+                    }
+
+                    &::after {
+                        transform: rotate(-45deg);
+                        top: 0;
+                    }
+                }
+
+                #navigation {
+                    position: fixed;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    right: -100%;
+                    width: 100%;
+                    height: 100vh;
+                    transition: .5s all;
+                    background-color: #00000094;
+                    z-index: 998;
+
+                    ul {
+                        flex-direction: column;
+                    }
+                }
+
+                #navigation.active {
+                    right: 0;
+                    top: 0;
+
+                    ul {
+                        width: 10%;
+
+                        li {
+                            display: block;
+                            margin-bottom: 5vh;
+                            width: 100%;
+
+                            a {
+                                color: #D7FF55;
+                                font-size: 1.5rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            header {
+                height: 60vh;
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .field {
+                h6 {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .besoin {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2em;
+                .itemBesoin {
+                    width: 30%;
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .produit{
+                .produitContainer{
+                    .produitArticle{
+                        .textProduit{
+                            p{
+                                font-size: 1rem;
+                            }
+                            button{
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
                 }
             }
         }
