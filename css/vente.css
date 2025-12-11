@@ -69,7 +69,7 @@ body main .field h6 {
   font-size: 2.3rem;
 }
 body main .besoin {
-  height: 70vh;
+  padding: 15vh 0;
   display: flex;
   align-items: center;
 }
@@ -91,7 +91,7 @@ body main .besoin .itemBesoin p {
 body main .produit .produitContainer {
   padding: 7vh 0;
   flex-wrap: wrap;
-  gap: 5em 5em;
+  gap: 5em;
 }
 body main .produit .produitContainer .produitArticle {
   background-color: #000;
@@ -110,12 +110,12 @@ body main .produit .produitContainer .produitArticle .textProduit {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-between;
   width: 55%;
   padding-top: 2vh;
   font-size: 1.3rem;
 }
 body main .produit .produitContainer .produitArticle .textProduit button {
-  margin-top: 15vh;
   margin-right: 2vh;
   text-align: center;
   width: 50%;
@@ -155,4 +155,23 @@ body main footer .copyright a {
   text-align: center;
   color: #fff;
   padding: 2vh;
+}
+
+@media screen and (max-width: 1024px) {
+  body main .navbarContainer div img {
+    width: 7%;
+  }
+  body main .navbarContainer div nav ul li {
+    font-size: 1rem;
+  }
+  body main .navbarContainer div .navIcons a svg {
+    width: 4vh;
+    height: 4vh;
+  }
+  body main .field h6 {
+    font-size: 1.7rem;
+  }
+  body main .textProduit p {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=vente.css.map */

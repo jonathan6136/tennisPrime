@@ -82,7 +82,7 @@ body {
         }
         // section besoin
         .besoin {
-            height: 70vh;
+            padding: 15vh 0;
             display: flex;
             align-items: center;
             .itemBesoin {
@@ -101,14 +101,13 @@ body {
                 }
             }
         }
-        // Section raquette
+        // Section produit
         .produit {
             .produitContainer {
                 padding: 7vh 0;
                 flex-wrap: wrap;
-                // justify-content: space-between;
-                gap: 5em 5em;
-                // produit
+                gap: 5em;
+                // produitArticle
                 .produitArticle {
                     background-color: #000;
                     display: flex;
@@ -125,11 +124,11 @@ body {
                         display: flex;
                         flex-direction: column;
                         text-align: center;
+                        justify-content: space-between;
                         width: 55%;
                         padding-top: 2vh;
                         font-size: 1.3rem;
                         button {
-                            margin-top: 15vh;
                             margin-right: 2vh;
                             text-align: center;
                             width: 50%;
@@ -148,6 +147,7 @@ body {
                 }
             }
         }
+        // footer
         footer {
             background-color: #000;
             padding-top: 5vh;
@@ -173,6 +173,43 @@ body {
                     text-align: center;
                     color: #fff;
                     padding: 2vh;
+                }
+            }
+        }
+    }
+}
+// Breakpoint 1024px
+@media screen and (max-width: 1024px){
+    body{
+        main{
+            .navbarContainer{
+                div{
+                    img{
+                        width: 7%;
+                    }
+                    nav{
+                        ul{
+                            li{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    .navIcons{
+                        a svg{
+                            width: 4vh;
+                            height: 4vh;
+                        }
+                    }
+                }
+            }
+            .field{
+                h6{
+                    font-size: 1.7rem;
+                }
+            }
+            .textProduit {
+                p{
+                    font-size: 1.2rem;
                 }
             }
         }
