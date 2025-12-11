@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* nav */
+.navbarContainer {
+  background-color: #000;
+}
+.navbarContainer div {
+  justify-content: space-between;
+}
+.navbarContainer div img {
+  width: 10%;
+}
+.navbarContainer div nav {
+  width: 50%;
+}
+.navbarContainer div nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marge {
+  padding: 0vh 10vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header */
+main .title {
+  background-color: #D7FF55;
+  width: 100%;
+  height: 6VH;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: black;
+}
+
+header {
+  background-image: url(../img/istockphoto-832170050-170667a.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 116VH;
+}
+header .titlee {
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+  padding: 4vh;
+}
+header .nom {
+  display: flex;
+  justify-content: space-between;
+}
+header .nom .jo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+header .nom .jo p {
+  font-size: 25px;
+  font-weight: 900;
+  margin-left: 5vh;
+}
+header .nom .ru {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15vh;
+}
+header .nom .ru p {
+  font-size: 25px;
+  font-weight: 900;
+}
+header .nom .la {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+header .nom .la p {
+  font-size: 25px;
+  font-weight: 900;
+  margin-right: 5vh;
+}
+header .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 12vh;
+  gap: 10vh;
+}
+header .container .cours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 36px;
+}
+header .container .cours .price {
+  margin-top: 3vh;
+}
+header .container .cours ul {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .container .courss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 36px;
+}
+header .container .courss .price {
+  margin-top: 3vh;
+}
+header .container .courss ul {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .adhesion {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+  margin-right: 1vh;
+  margin-top: 5vh;
+}
+
+footer {
+  background-color: #000;
+}
+footer .footer {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+footer .footer svg {
+  fill: #000;
+  stroke: #fff;
+  width: 3vh;
+  height: 3vh;
+}
+footer .copyright a {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 5vh;
+  margin-bottom: 2vh 5vh;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: 2vh;
+}/*# sourceMappingURL=cours.css.map */
