@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .center {
   display: flex;
   align-items: center;
@@ -135,4 +139,795 @@ footer .copyright a {
   text-align: center;
   color: #fff;
   padding: 2vh;
+}
+
+@media screen and (max-width: 1024px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .marge {
+    padding: 0 10vh;
+  }
+  .Accueil {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+  }
+  .Accueil img {
+    width: 10%;
+  }
+  .Accueil nav {
+    background-color: #000;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .Accueil nav ul {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+  }
+  .Accueil nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .Accueil .icone a {
+    color: #fff;
+    gap: 2em;
+  }
+  header {
+    background-image: url("/image/19735-balle_de_tennis-raquette-balles_de_tennis-4000x2667.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+  }
+  header h1 {
+    color: #D7FF55;
+    height: 20vh;
+    width: 100%;
+    padding: 15vh 10vh;
+  }
+  .actualite {
+    background-color: #000;
+    color: #fff;
+  }
+  .actualite .actualiteContainer {
+    display: flex;
+    padding: 0 10vh;
+  }
+  .actualite .actualiteContainer p {
+    margin: 5vh 2vh;
+  }
+  .actualite .match {
+    display: flex;
+    padding: 0 10vh;
+  }
+  .actualite .match p {
+    margin: 2vh 2vh;
+  }
+  .actualite .tournoi {
+    display: flex;
+    padding: 0 10vh;
+    padding: 2vh;
+  }
+  .actualite .tournoi p {
+    padding: 0 9vh;
+  }
+  .actualite .image {
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+    gap: 2em;
+  }
+  .actualite .image img {
+    width: 15%;
+  }
+  .actualite .btn {
+    display: flex;
+    padding: 0 10vh;
+  }
+  .actualite .btn a {
+    color: #000;
+    background-color: #D7FF55;
+    padding: 1vh;
+    border-radius: 2vh;
+    text-decoration: none;
+    margin: 1vh 1vh;
+    margin-bottom: 2vh;
+  }
+  .actualite .classement {
+    display: flex;
+    padding: 0 10vh;
+  }
+  .actualite .classement p {
+    margin: 3vh;
+  }
+  footer {
+    background-color: #000;
+  }
+  footer .footer {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+  footer .footer svg {
+    fill: #000;
+    stroke: #fff;
+    width: 3vh;
+    height: 3vh;
+  }
+  footer .copyright a {
+    display: flex;
+    justify-content: center;
+    margin: 2vh 5vh;
+    margin-bottom: 2vh 5vh;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 2vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .marge {
+    padding: 0 10vh;
+  }
+  .Accueil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+  }
+  .Accueil img {
+    width: 10%;
+  }
+  .Accueil #toggle {
+    position: fixed;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    top: 4.5vh;
+    right: 3.5vh;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 999;
+  }
+  .Accueil #toggle:before, .Accueil #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    background-color: #fff;
+  }
+  .Accueil #toggle:before {
+    top: -0.9vh;
+  }
+  .Accueil #toggle:after {
+    top: 0.9vh;
+  }
+  .Accueil #toggle.active {
+    background-color: transparent;
+  }
+  .Accueil #toggle.active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .Accueil #toggle.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .Accueil #navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: rgba(0, 0, 0, 0.5803921569);
+    z-index: 998;
+  }
+  .Accueil #navigation ul {
+    flex-direction: column;
+  }
+  .Accueil #navigation.active {
+    right: 0;
+    top: 0;
+  }
+  .Accueil #navigation.active ul {
+    width: 10%;
+  }
+  .Accueil #navigation.active ul li {
+    display: block;
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+  .Accueil #navigation.active ul li a {
+    color: #D7FF55;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  nav {
+    background-color: #000;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .icone a {
+    gap: 2em;
+    color: #fff;
+  }
+  .icone a svg {
+    width: 5vh;
+    height: 5vh;
+  }
+}
+header {
+  background-image: url("/image/19735-balle_de_tennis-raquette-balles_de_tennis-4000x2667.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+header h1 {
+  color: #D7FF55;
+  height: 20vh;
+  width: 100%;
+  padding: 15vh 10vh;
+}
+
+.actualite {
+  background-color: #000;
+  color: #fff;
+}
+.actualite .actualiteContainer {
+  display: flex;
+  padding: 0 10vh;
+}
+.actualite .actualiteContainer p {
+  margin: 5vh 2vh;
+}
+.actualite .match {
+  display: flex;
+  padding: 0 10vh;
+  font-size: 2vh;
+}
+.actualite .match p {
+  margin: 2vh 2vh;
+}
+.actualite .tournoi {
+  display: flex;
+  padding: 0 10vh;
+  padding: 1vh;
+}
+.actualite .tournoi p {
+  padding: 0 3.5vh;
+  font-size: 2vh;
+}
+.actualite .image {
+  display: flex;
+  justify-content: center;
+  padding: 1vh;
+  gap: 2em;
+}
+.actualite .image img {
+  width: 15%;
+}
+.actualite .btn {
+  display: flex;
+  padding: 0 10vh;
+}
+.actualite .btn a {
+  color: #000;
+  background-color: #D7FF55;
+  padding: 1vh;
+  border-radius: 2vh;
+  text-decoration: none;
+  margin: 4vh 1vh;
+  margin-bottom: 2vh;
+}
+.actualite .classement {
+  display: flex;
+  padding: 0 10vh;
+}
+.actualite .classement p {
+  margin: 2vh;
+}
+
+footer {
+  background-color: #000;
+}
+footer .footer {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+footer .footer svg {
+  fill: #000;
+  stroke: #fff;
+  width: 3vh;
+  height: 3vh;
+}
+footer .copyright a {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 5vh;
+  margin-bottom: 2vh 5vh;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: 2vh;
+}
+
+@media screen and (max-width: 425px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .marge {
+    padding: 0 10vh;
+  }
+  .Accueil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+  }
+  .Accueil img {
+    width: 10%;
+  }
+  .Accueil #toggle {
+    position: fixed;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    top: 4.5vh;
+    right: 3.5vh;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 999;
+  }
+  .Accueil #toggle:before, .Accueil #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    background-color: #fff;
+  }
+  .Accueil #toggle:before {
+    top: -0.9vh;
+  }
+  .Accueil #toggle:after {
+    top: 0.9vh;
+  }
+  .Accueil #toggle.active {
+    background-color: transparent;
+  }
+  .Accueil #toggle.active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .Accueil #toggle.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .Accueil #navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: rgba(0, 0, 0, 0.5803921569);
+    z-index: 998;
+  }
+  .Accueil #navigation ul {
+    flex-direction: column;
+  }
+  .Accueil #navigation.active {
+    right: 0;
+    top: 0;
+  }
+  .Accueil #navigation.active ul {
+    width: 10%;
+  }
+  .Accueil #navigation.active ul li {
+    display: block;
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+  .Accueil #navigation.active ul li a {
+    color: #D7FF55;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  nav {
+    background-color: #000;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .icone a {
+    gap: 2em;
+    color: #fff;
+  }
+  .icone a svg {
+    width: 5vh;
+    height: 5vh;
+  }
+}
+header {
+  background-image: url("/image/19735-balle_de_tennis-raquette-balles_de_tennis-4000x2667.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+header h1 {
+  color: #D7FF55;
+  height: 20vh;
+  width: 100%;
+  padding: 15vh 10vh;
+}
+
+.actualite {
+  background-color: #000;
+  color: #fff;
+}
+.actualite .actualiteContainer {
+  display: flex;
+  padding: 0 10vh;
+}
+.actualite .actualiteContainer p {
+  margin: 5vh 2vh;
+  font-size: 3vh;
+}
+.actualite .match {
+  display: flex;
+  padding: 0 10vh;
+  font-size: 2vh;
+}
+.actualite .match p {
+  margin: 2vh 2vh;
+}
+.actualite .tournoi {
+  display: flex;
+  padding: 1 10vh;
+  margin: 2vh 2vh;
+}
+.actualite .tournoi p {
+  padding: 0 3.5vh;
+  font-size: 2vh;
+}
+.actualite .image {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1vh;
+  gap: 1em;
+}
+.actualite .image img {
+  width: 15%;
+}
+.actualite .btn {
+  display: flex;
+  padding: 0 10vh;
+}
+.actualite .btn a {
+  color: #000;
+  background-color: #D7FF55;
+  padding: 0.4vh;
+  border-radius: 3vh;
+  text-decoration: none;
+  margin: 4vh 1vh;
+  margin-bottom: 2vh;
+  font-size: 3vh;
+}
+.actualite .classement {
+  display: flex;
+  padding: 0 10vh;
+  font-size: 2.5vh;
+}
+.actualite .classement p {
+  margin: 2vh;
+}
+
+footer {
+  background-color: #000;
+}
+footer .footer {
+  gap: 2em;
+}
+footer .footer svg {
+  fill: #000;
+  stroke: #fff;
+  width: 3vh;
+  height: 3vh;
+}
+footer .copyright a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2vh 5vh;
+  margin-bottom: 2vh 5vh;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: 2vh;
+  font-size: 3vh;
+}
+
+@media screen and (max-width: 375px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .marge {
+    padding: 0 10vh;
+  }
+  .Accueil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+  }
+  .Accueil img {
+    width: 10%;
+  }
+  .Accueil #toggle {
+    position: fixed;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    top: 4.5vh;
+    right: 3.5vh;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 999;
+  }
+  .Accueil #toggle:before, .Accueil #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    background-color: #fff;
+  }
+  .Accueil #toggle:before {
+    top: -0.9vh;
+  }
+  .Accueil #toggle:after {
+    top: 0.9vh;
+  }
+  .Accueil #toggle.active {
+    background-color: transparent;
+  }
+  .Accueil #toggle.active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .Accueil #toggle.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .Accueil #navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: rgba(0, 0, 0, 0.5803921569);
+    z-index: 998;
+  }
+  .Accueil #navigation ul {
+    flex-direction: column;
+  }
+  .Accueil #navigation.active {
+    right: 0;
+    top: 0;
+  }
+  .Accueil #navigation.active ul {
+    width: 10%;
+  }
+  .Accueil #navigation.active ul li {
+    display: block;
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+  .Accueil #navigation.active ul li a {
+    color: #D7FF55;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  nav {
+    background-color: #000;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .icone a {
+    gap: 2em;
+    color: #fff;
+  }
+  .icone a svg {
+    width: 5vh;
+    height: 5vh;
+  }
+}
+header {
+  background-image: url("/image/19735-balle_de_tennis-raquette-balles_de_tennis-4000x2667.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+header h1 {
+  color: #D7FF55;
+  height: 20vh;
+  width: 100%;
+  padding: 15vh 10vh;
+}
+
+.actualite {
+  background-color: #000;
+  color: #fff;
+}
+.actualite .actualiteContainer {
+  display: flex;
+  padding: 0 10vh;
+}
+.actualite .actualiteContainer p {
+  margin: 5vh 2vh;
+  font-size: 3vh;
+}
+.actualite .match {
+  display: flex;
+  padding: 0 10vh;
+  font-size: 2vh;
+}
+.actualite .match p {
+  margin: 2vh 2vh;
+}
+.actualite .tournoi {
+  display: flex;
+  padding: 1 10vh;
+  margin: 2vh 2vh;
+}
+.actualite .tournoi p {
+  padding: 0 3.5vh;
+  font-size: 2vh;
+}
+.actualite .image {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1vh;
+  gap: 1em;
+}
+.actualite .image img {
+  width: 15%;
+}
+.actualite .btn {
+  display: flex;
+  padding: 0 10vh;
+}
+.actualite .btn a {
+  color: #000;
+  background-color: #D7FF55;
+  padding: 0.4vh;
+  border-radius: 3vh;
+  text-decoration: none;
+  margin: 4vh 1vh;
+  margin-bottom: 2vh;
+  font-size: 3vh;
+}
+.actualite .classement {
+  display: flex;
+  padding: 0 10vh;
+  font-size: 2.5vh;
+}
+.actualite .classement p {
+  margin: 2vh;
+}
+
+footer {
+  background-color: #000;
+}
+footer .footer {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+footer .footer svg {
+  fill: #000;
+  stroke: #fff;
+  width: 3vh;
+  height: 3vh;
+}
+footer .copyright a {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 5vh;
+  margin-bottom: 2vh 5vh;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: 2vh;
+  font-size: 2vh;
 }/*# sourceMappingURL=actualite.css.map */
