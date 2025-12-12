@@ -86,13 +86,13 @@ header h1 {
 .actualite .tournoi p {
   padding: 0 10vh;
 }
-.actualite .image {
+.actualite .imageContainer {
   display: flex;
   justify-content: center;
   padding: 2vh;
   gap: 2em;
 }
-.actualite .image img {
+.actualite .imageContainer img {
   width: 15%;
 }
 .actualite .btn {
