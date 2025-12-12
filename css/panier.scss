@@ -1,0 +1,776 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.marge {
+    padding: 0vh 10vh;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// nav
+.navbarContainer {
+    background-color: #000;
+
+    .navHeader{
+        justify-content: space-between;
+
+        img {
+            width: 10%;
+        }
+
+        nav {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                width: 70%;
+
+                li {
+                    a {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .navIcons {
+            display: flex;
+            gap: 1.5em;
+
+            a {
+                svg {
+                    width: 4vh;
+                    height: 4vh;
+                }
+            }
+        }
+    }
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+}
+// header
+
+header {
+    background-image: url(../img/istockphoto-181100251-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .titleContainer {
+        margin-left: 20vh;
+
+        .title {
+
+
+            h1 {
+                color: #D7FF55;
+                text-transform: uppercase;
+                font-size: 7vh;
+                font-style: italic;
+                margin-right: 12VH;
+
+
+
+            }
+        }
+
+        .titlee {
+
+            h2 {
+                color: #D7FF55;
+                text-transform: uppercase;
+                font-size: 7vh;
+                font-style: italic;
+                margin-left: 15vh;
+            }
+        }
+    }
+}
+
+.containerPanier {
+    background-image: url(../img/shopping-cart-icon-set-black-260nw-2595242365.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    height: 40vh;
+    
+
+
+
+    .panier {
+        background-color: #000;
+        width: 100%;
+        text-align: center;
+
+        h3 {
+            padding: 3vh 0;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+
+        }
+    }
+
+}
+
+.vert {
+    background-color: #D7FF55;
+    height: 5vh;
+
+
+}
+
+.continue {
+
+    display: block;
+    padding: 2vh 3vh;
+    background-color: #D7FF55;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+    margin: 10vh 0;
+
+}
+
+.recapPanier {
+    display: flex;
+
+    .recapContainer {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 70%;
+        }
+
+        h4 {
+            background-color: #000;
+            color: #fff;
+            padding: 1vh;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 10vh;
+            width: 100%;
+        }
+
+        div {
+            width: 100%;
+            text-align: left;
+
+            p {
+                margin: 10vh 0;
+                margin-left: 10vh;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    .vide {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            margin-bottom: 20vh;
+        }
+    }
+}
+
+footer {
+    background-color: #000;
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+
+        svg {
+            fill: #000;
+            stroke: #fff;
+            width: 3vh;
+            height: 3vh;
+        }
+    }
+
+    .copyright {
+        a {
+            display: flex;
+            justify-content: center;
+            margin: 2vh 5vh;
+            margin-bottom: 2vh 5vh;
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+            padding: 2vh;
+        }
+    }
+}
+
+// Breakpoint 1024
+@media screen and (max-width: 1024px) {
+
+    .navbarContainer {
+        div {
+            img {
+                width: 7%;
+            }
+
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .navIcons {
+                a svg {
+                    width: 4vh;
+                    height: 4vh;
+                }
+            }
+        }
+    }
+
+
+    header {
+        .titleContainer {
+            margin-left: 20vh;
+        }
+    }
+
+    .containerPanier {
+        .panier {
+            h3 {
+                font-size: 27px;
+            }
+        }
+    }
+
+    .recapPanier {
+
+        .continue {
+            font-size: 1.2rem;
+        }
+
+        .recapContainer {
+            P {
+                font-size: 1rem;
+            }
+
+            .continue {
+                font-size: 1.2rem;
+            }
+
+            h4 {
+                font-size: 1.4rem;
+            }
+
+            div {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+
+
+    .vide {
+        p {
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+// Breakpoint 768
+@media screen and (max-width: 768px) {
+.navbarContainer{
+    .navHeader{
+        justify-content: space-between;
+    }
+    #toggle {
+        position: fixed;
+        display: block;
+        width: 4vh;
+        height: .3vh;
+        top: 3.5vh;
+        right: 2.5vh;
+        cursor: pointer;
+        background-color: #fff;
+        z-index: 999;
+        
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 4vh;
+            height: .3vh;
+            background-color: #fff;
+        }
+        
+        &:before {
+            top: -.9vh;
+        }
+        
+        &:after {
+            top: .9vh;
+        }
+    }
+    
+    #toggle.active {
+        background-color: transparent;
+        
+        &::before {
+            transform: rotate(45deg);
+            top: 0;
+        }
+        
+        &::after {
+            transform: rotate(-45deg);
+            top: 0;
+        }
+    }
+    
+    #navigation {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        transition: .5s all;
+        background-color: #00000094;
+        z-index: 998;
+        
+        ul {
+            flex-direction: column;
+        }
+    }
+    
+    #navigation.active {
+        right: 0;
+        top: 0;
+        
+        ul {
+            width: 10%;
+            
+            li {
+                display: block;
+                margin-bottom: 5vh;
+                width: 100%;
+                
+                a {
+                    color: #D7FF55;
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    .navIcons {
+        display: flex;
+        gap: 1.5em;
+        
+        a {
+            svg {
+                width: 4vh;
+                height: 4vh;
+            }
+        }
+    }
+}
+}
+
+header {
+    .titleContainer {
+        margin-left: 13vh;
+        
+            .title {
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+
+            .titlee {
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+
+        }
+    }
+
+    .containerPanier {
+        background-size: cover;
+
+        .panier {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .recapPanier {
+
+        .continue {
+            font-size: 1rem;
+        }
+
+        .recapContainer {
+            P {
+                font-size: 0.8rem;
+            }
+
+            .continue {
+                font-size: 1rem;
+            }
+
+            h4 {
+                font-size: 1.1rem;
+            }
+
+            div {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .vide {
+        p {
+            font-weight: 500;
+            font-size: 0.8rem;
+        }
+    }
+
+// Breakpoint 425
+@media screen and (max-width: 425px) {
+
+            .navIcons {
+                a {
+                    svg {
+                        width: 3vh;
+                        height: 3vh;
+                    }
+                }
+            }
+
+    header {
+        .titleContainer {
+            margin-left: 8vh;
+            margin-top: 17vh;
+
+            .title {
+                h1 {
+                    font-size: 1.9rem;
+                }
+            }
+
+            .titlee {
+                h2 {
+                    font-size: 1.9rem;
+                }
+            }
+
+        }
+    }
+
+    .containerPanier {
+        height: 0vh;
+
+        .panier {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .recapPanier {
+
+        .continue {
+            font-size: 0.7rem;
+        }
+
+        .recapContainer {
+            P {
+                font-size: 0.8rem;
+            }
+
+            IMG {
+                 display: none;
+            }
+
+            .continue {
+                font-size: 0.7rem;
+            }
+
+            h4 {
+                font-size: 1rem;
+            }
+
+            div {
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+
+    .vide {
+        p {
+            font-weight: 500;
+            font-size: 0.6rem;
+        }
+    }
+
+    .copyright {
+        a {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+// Breakpoint 375
+@media screen and (max-width: 375px) {
+
+    header {
+        .titleContainer {
+            margin-left: 6vh;
+            margin-top: 20vh;
+
+            .title {
+                h1 {
+                    font-size: 1.7rem;
+                }
+            }
+
+            .titlee {
+                h2 {
+                    font-size: 1.7rem;
+                }
+            }
+
+        }
+    }
+
+    .containerPanier {
+        height: 0vh;
+
+        .panier {
+            h3 {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .recapPanier {
+
+        .continue {
+            font-size: 0.6rem;
+        }
+
+        .recapContainer {
+            P {
+                font-size: 0.5rem;
+            }
+
+            IMG {
+                 display: none;
+            }
+
+            .continue {
+                font-size: 0.6rem;
+            }
+
+            h4 {
+                font-size: 0.9rem;
+            }
+
+            div {
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+
+    footer {
+
+        .footer {
+
+            svg {
+                width: 2.5vh;
+                height: 2.5vh;
+            }
+        }
+
+        .copyright {
+            a {
+                font-size: 0.6rem;
+            }
+        }
+    }
+}
+
+// Breakpoint 320
+@media screen and (max-width: 320px) {
+   .navbarContainer{
+
+   
+   
+   .marge{
+   padding: 0vh 6VH 0VH 3VH;
+   }
+   .navIcons{
+
+    gap: 0.7em;
+        
+        }
+  } 
+
+    header {
+        height: 50VH;
+
+        .titleContainer {
+            margin-left: 5vh;
+            margin-top: 22vh;
+
+            .title {
+                h1 {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .titlee {
+                h2 {
+                    font-size: 1.4rem;
+                   
+                }
+            }
+
+        }
+    }
+
+    .containerPanier {
+        .panier {
+
+            width: 100%;
+            height: 4VH;
+
+            h3 {
+                padding: 0vh 0vh;
+                font-size: 20px;
+
+            }
+        }
+    }
+
+    .vert {
+        height: 2vh;
+    }
+
+
+
+    .containerPanier {
+        height: 0vh;
+
+        .panier {
+            h3 {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .recapPanier {
+
+        .continue {
+            font-size: 0.6rem;
+            width: 17vh;
+        }
+
+        .recapContainer {
+            P {
+                font-size: 0.4rem;
+            }
+
+            IMG {
+                display: none;
+
+            }
+
+            .continue {
+                font-size: 0.6rem;
+                width: 17vh;
+            }
+
+            h4 {
+                font-size: 0.6rem;
+            }
+
+            div {
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+
+    footer {
+
+        .footer {
+
+            svg {
+                width: 2.4vh;
+                height: 2.4vh;
+            }
+        }
+
+        .copyright {
+            a {
+                font-size: 0.5rem;
+            }
+        }
+    }
+}

@@ -301,7 +301,7 @@ body main footer .copyright p {
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   body main .navbarContainer {
     justify-content: space-around;
   }

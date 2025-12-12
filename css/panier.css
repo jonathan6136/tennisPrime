@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.marge {
+  padding: 0vh 10vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarContainer {
+  background-color: #000;
+}
+.navbarContainer .navHeader {
+  justify-content: space-between;
+}
+.navbarContainer .navHeader img {
+  width: 10%;
+}
+.navbarContainer .navHeader nav {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.navbarContainer .navHeader nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.navbarContainer .navHeader nav ul li a {
+  font-size: 1.5rem;
+}
+.navbarContainer .navHeader .navIcons {
+  display: flex;
+  gap: 1.5em;
+}
+.navbarContainer .navHeader .navIcons a svg {
+  width: 4vh;
+  height: 4vh;
+}
+.navbarContainer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  background-image: url(../img/istockphoto-181100251-612x612.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .titleContainer {
+  margin-left: 20vh;
+}
+header .titleContainer .title h1 {
+  color: #D7FF55;
+  text-transform: uppercase;
+  font-size: 7vh;
+  font-style: italic;
+  margin-right: 12VH;
+}
+header .titleContainer .titlee h2 {
+  color: #D7FF55;
+  text-transform: uppercase;
+  font-size: 7vh;
+  font-style: italic;
+  margin-left: 15vh;
+}
+
+.containerPanier {
+  background-image: url(../img/shopping-cart-icon-set-black-260nw-2595242365.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  height: 40vh;
+}
+.containerPanier .panier {
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+}
+.containerPanier .panier h3 {
+  padding: 3vh 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.vert {
+  background-color: #D7FF55;
+  height: 5vh;
+}
+
+.continue {
+  display: block;
+  padding: 2vh 3vh;
+  background-color: #D7FF55;
+  width: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+  margin: 10vh 0;
+}
+
+.recapPanier {
+  display: flex;
+}
+.recapPanier .recapContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recapPanier .recapContainer img {
+  width: 70%;
+}
+.recapPanier .recapContainer h4 {
+  background-color: #000;
+  color: #fff;
+  padding: 1vh;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10vh;
+  width: 100%;
+}
+.recapPanier .recapContainer div {
+  width: 100%;
+  text-align: left;
+}
+.recapPanier .recapContainer div p {
+  margin: 10vh 0;
+  margin-left: 10vh;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.recapPanier .vide {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recapPanier .vide p {
+  margin-bottom: 20vh;
+}
+
+footer {
+  background-color: #000;
+}
+footer .footer {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+footer .footer svg {
+  fill: #000;
+  stroke: #fff;
+  width: 3vh;
+  height: 3vh;
+}
+footer .copyright a {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 5vh;
+  margin-bottom: 2vh 5vh;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: 2vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbarContainer div img {
+    width: 7%;
+  }
+  .navbarContainer div nav ul li a {
+    font-size: 1rem;
+  }
+  .navbarContainer div .navIcons a svg {
+    width: 4vh;
+    height: 4vh;
+  }
+  header .titleContainer {
+    margin-left: 20vh;
+  }
+  .containerPanier .panier h3 {
+    font-size: 27px;
+  }
+  .recapPanier .continue {
+    font-size: 1.2rem;
+  }
+  .recapPanier .recapContainer P {
+    font-size: 1rem;
+  }
+  .recapPanier .recapContainer .continue {
+    font-size: 1.2rem;
+  }
+  .recapPanier .recapContainer h4 {
+    font-size: 1.4rem;
+  }
+  .recapPanier .recapContainer div p {
+    font-size: 1.2rem;
+  }
+  .vide p {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbarContainer .navHeader {
+    justify-content: space-between;
+  }
+  .navbarContainer #toggle {
+    position: fixed;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    top: 3.5vh;
+    right: 2.5vh;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 999;
+  }
+  .navbarContainer #toggle:before, .navbarContainer #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    background-color: #fff;
+  }
+  .navbarContainer #toggle:before {
+    top: -0.9vh;
+  }
+  .navbarContainer #toggle:after {
+    top: 0.9vh;
+  }
+  .navbarContainer #toggle.active {
+    background-color: transparent;
+  }
+  .navbarContainer #toggle.active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .navbarContainer #toggle.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .navbarContainer #navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: rgba(0, 0, 0, 0.5803921569);
+    z-index: 998;
+  }
+  .navbarContainer #navigation ul {
+    flex-direction: column;
+  }
+  .navbarContainer #navigation.active {
+    right: 0;
+    top: 0;
+  }
+  .navbarContainer #navigation.active ul {
+    width: 10%;
+  }
+  .navbarContainer #navigation.active ul li {
+    display: block;
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+  .navbarContainer #navigation.active ul li a {
+    color: #D7FF55;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .navbarContainer .navIcons {
+    display: flex;
+    gap: 1.5em;
+  }
+  .navbarContainer .navIcons a svg {
+    width: 4vh;
+    height: 4vh;
+  }
+}
+header .titleContainer {
+  margin-left: 13vh;
+}
+header .titleContainer .title h1 {
+  font-size: 2rem;
+}
+header .titleContainer .titlee h2 {
+  font-size: 2rem;
+}
+
+.containerPanier {
+  background-size: cover;
+}
+.containerPanier .panier h3 {
+  font-size: 20px;
+}
+
+.recapPanier .continue {
+  font-size: 1rem;
+}
+.recapPanier .recapContainer P {
+  font-size: 0.8rem;
+}
+.recapPanier .recapContainer .continue {
+  font-size: 1rem;
+}
+.recapPanier .recapContainer h4 {
+  font-size: 1.1rem;
+}
+.recapPanier .recapContainer div p {
+  font-size: 1rem;
+}
+
+.vide p {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 425px) {
+  .navIcons a svg {
+    width: 3vh;
+    height: 3vh;
+  }
+  header .titleContainer {
+    margin-left: 8vh;
+    margin-top: 17vh;
+  }
+  header .titleContainer .title h1 {
+    font-size: 1.9rem;
+  }
+  header .titleContainer .titlee h2 {
+    font-size: 1.9rem;
+  }
+  .containerPanier {
+    height: 0vh;
+  }
+  .containerPanier .panier h3 {
+    font-size: 20px;
+  }
+  .recapPanier .continue {
+    font-size: 0.7rem;
+  }
+  .recapPanier .recapContainer P {
+    font-size: 0.8rem;
+  }
+  .recapPanier .recapContainer IMG {
+    display: none;
+  }
+  .recapPanier .recapContainer .continue {
+    font-size: 0.7rem;
+  }
+  .recapPanier .recapContainer h4 {
+    font-size: 1rem;
+  }
+  .recapPanier .recapContainer div p {
+    font-size: 0.7rem;
+  }
+  .vide p {
+    font-weight: 500;
+    font-size: 0.6rem;
+  }
+  .copyright a {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  header .titleContainer {
+    margin-left: 6vh;
+    margin-top: 20vh;
+  }
+  header .titleContainer .title h1 {
+    font-size: 1.7rem;
+  }
+  header .titleContainer .titlee h2 {
+    font-size: 1.7rem;
+  }
+  .containerPanier {
+    height: 0vh;
+  }
+  .containerPanier .panier h3 {
+    font-size: 16px;
+  }
+  .recapPanier .continue {
+    font-size: 0.6rem;
+  }
+  .recapPanier .recapContainer P {
+    font-size: 0.5rem;
+  }
+  .recapPanier .recapContainer IMG {
+    display: none;
+  }
+  .recapPanier .recapContainer .continue {
+    font-size: 0.6rem;
+  }
+  .recapPanier .recapContainer h4 {
+    font-size: 0.9rem;
+  }
+  .recapPanier .recapContainer div p {
+    font-size: 0.6rem;
+  }
+  footer .footer svg {
+    width: 2.5vh;
+    height: 2.5vh;
+  }
+  footer .copyright a {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .navbarContainer .marge {
+    padding: 0vh 6VH 0VH 3VH;
+  }
+  .navbarContainer .navIcons {
+    gap: 0.7em;
+  }
+  header {
+    height: 50VH;
+  }
+  header .titleContainer {
+    margin-left: 5vh;
+    margin-top: 22vh;
+  }
+  header .titleContainer .title h1 {
+    font-size: 1.4rem;
+  }
+  header .titleContainer .titlee h2 {
+    font-size: 1.4rem;
+  }
+  .containerPanier .panier {
+    width: 100%;
+    height: 4VH;
+  }
+  .containerPanier .panier h3 {
+    padding: 0vh 0vh;
+    font-size: 20px;
+  }
+  .vert {
+    height: 2vh;
+  }
+  .containerPanier {
+    height: 0vh;
+  }
+  .containerPanier .panier h3 {
+    font-size: 13px;
+  }
+  .recapPanier .continue {
+    font-size: 0.6rem;
+    width: 17vh;
+  }
+  .recapPanier .recapContainer P {
+    font-size: 0.4rem;
+  }
+  .recapPanier .recapContainer IMG {
+    display: none;
+  }
+  .recapPanier .recapContainer .continue {
+    font-size: 0.6rem;
+    width: 17vh;
+  }
+  .recapPanier .recapContainer h4 {
+    font-size: 0.6rem;
+  }
+  .recapPanier .recapContainer div p {
+    font-size: 0.6rem;
+  }
+  footer .footer svg {
+    width: 2.4vh;
+    height: 2.4vh;
+  }
+  footer .copyright a {
+    font-size: 0.5rem;
+  }
+}/*# sourceMappingURL=panier.css.map */
