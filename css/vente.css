@@ -85,10 +85,13 @@ body main .besoin .itemBesoin {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 8vh;
   text-align: center;
+  gap: 1em;
+  padding: 2vh 0;
 }
 body main .besoin .itemBesoin img {
-  width: 50%;
+  width: 60%;
 }
 body main .besoin .itemBesoin p {
   margin-top: 2vh;
@@ -153,12 +156,25 @@ body main footer .iconFooter svg {
   height: 3vh;
   cursor: pointer;
 }
-body main footer .copyright a {
+body main footer .copyright {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body main footer .copyright div {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  text-align: center;
-  color: #fff;
+  gap: 1em;
+  align-items: center;
+  padding-top: 2vh;
+}
+body main footer .copyright div p {
+  font-size: 1em;
+}
+body main footer .copyright p {
   padding: 2vh;
 }
 
@@ -278,6 +294,12 @@ body main footer .copyright a {
   body main .produit .produitContainer .produitArticle .textProduit button {
     font-size: 0.7rem;
   }
+  body main footer div a {
+    font-size: 0.8rem;
+  }
+  body main footer p {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 425px) {
   body main .navbarContainer {
@@ -320,5 +342,14 @@ body main footer .copyright a {
   }
   body main .produit .produitContainer .produitArticle .textProduit p {
     font-size: 0.7em;
+  }
+  body main footer p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .besoin {
+    flex-wrap: none;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=vente.css.map */

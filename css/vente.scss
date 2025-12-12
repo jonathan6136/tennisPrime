@@ -113,12 +113,15 @@ body {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-
+                border-radius: 8vh;
+                text-align: center;
+                gap: 1em;
+                padding: 2vh 0;
+                
                 img {
-                    width: 50%;
+                    width: 60%;
                 }
 
-                text-align: center;
 
                 p {
                     margin-top: 2vh;
@@ -200,12 +203,23 @@ body {
             }
 
             .copyright {
-                a {
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                div {
                     display: flex;
                     justify-content: center;
                     text-decoration: none;
-                    text-align: center;
-                    color: #fff;
+                    gap: 1em;
+                    align-items: center;
+                    padding-top: 2vh;
+                    p{
+                        font-size: 1em;
+                    }
+                }
+                p{
                     padding: 2vh;
                 }
             }
@@ -392,6 +406,16 @@ body {
                     }
                 }
             }
+            footer{
+                div{
+                    a{
+                        font-size: 0.8rem;
+                    }
+                }
+                p{
+                    font-size: 0.8rem;
+                }
+            }
         }
     }
 }
@@ -449,7 +473,18 @@ body {
                     }
                 }
             }
+            footer{
+                p{
+                    font-size: 0.7rem;
+                }
+            }
         }
     }
+}
+@media screen and (max-width: 375px) {
+    .besoin{
+        flex-wrap: none;
+        flex-direction: column;
 
+    }
 }
