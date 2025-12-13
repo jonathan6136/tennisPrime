@@ -158,8 +158,12 @@ header .titleContainer .titlee h2 {
   justify-content: center;
   align-items: center;
 }
-.recapPanier .vide p {
-  margin-bottom: 20vh;
+.recapPanier .vide .articlePanier {
+  width: 100%;
+  display: flex;
+}
+.recapPanier .vide .articlePanier img {
+  width: 20%;
 }
 
 footer {

@@ -203,9 +203,12 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        p {
-            margin-bottom: 20vh;
+        .articlePanier{
+            width: 100%;
+            display: flex;
+            img {
+                width: 20%;
+            }
         }
     }
 }
