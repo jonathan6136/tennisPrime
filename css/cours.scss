@@ -58,7 +58,8 @@ a{
 /* Header */
 
 main{
-    .title{
+    .containerTitle{
+          
     background-color:#D7FF55;
     width: 100% ;
     height: 6VH;
@@ -66,8 +67,14 @@ main{
     text-transform: uppercase;
     font-size: 19px;
     color:black;
-} 
+    display: flex;
+    justify-content: center;
+        img{
+            width: 5%;
+         }
+    } 
 }
+
    header{
     background-image: url(../img/istockphoto-832170050-170667a.jpg);
     background-position: center;
@@ -181,7 +188,7 @@ main{
             display: flex;
             justify-content: end;
             margin-right: 1vh;
-            margin-top: 5vh;
+        
         }
    }  
 
@@ -214,7 +221,311 @@ footer{
     }
   }
 
+  //////////////////////////////// RESPONSIVE
+  /// 
+  /// 
+  /// 
+  /// 
+// Breakpoint 1440px
+@media screen and (max-width: 1440px){
+
+    main{
+    .containerTitle{
+        font-size: 22px;
+    }
+ header{
+       .adhesion{
+            
+                P{
+                    font-size: 18px;
+                    margin-top: 5vh;
+                }
+            }
+         }
+    }
+}
 
 
 
 
+
+
+
+// Breakpoint 1024px
+@media screen and (max-width: 1024px){
+    main{
+        .navbarContainer{
+                div{
+                    img{
+                        width: 7%;
+                    }
+                    nav{
+                        ul{
+                            li{
+                                a{
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                    .navIcons{
+                        a svg{
+                            width: 4vh;
+                            height: 4vh;
+                        }
+                    }
+                }
+            }
+        .containerTitle{
+                height: 5vh;
+                h1{
+                font-size: 27px;
+                 }
+                img{
+                     width: 6%;
+                    }
+                }
+           
+
+    header{
+            .titlee{
+                    h2{
+                    font-size: 25px;
+                    }
+                }
+             
+
+    .nom{
+            .jo{
+                p{
+                    margin-left: 9vh;  
+                    font-size: 20px;
+                 }
+            }    
+        }
+    
+    .nom{
+            .ru{
+                p{
+                font-size: 20px;
+                 }
+            }    
+        }
+ .nom{
+            .la{
+                p{
+                    margin-right:  9vh;  
+                    font-size: 20px;
+                 }
+            }    
+        }
+
+    .container{
+            .cours{
+                    font-size: 22px;
+                    color: #000;
+                    font-weight: 600;
+                    margin-top: 10vh;
+                  }
+                .courss{
+                    font-size: 22px;
+                    color: #000;
+                    font-weight: 600;
+                    margin-top: 10vh;
+                }
+           }  
+        
+        .adhesion{
+            
+                P{
+                    font-size: 17px;
+                
+                }
+            }
+         }
+
+         footer{
+           
+            .copyright{
+                a{
+                     font-size: 13px;
+                }
+            }
+         }
+    }
+}
+    // Breakpoint 768px
+@media screen and (max-width: 768px){
+#toggle{
+                    position: fixed;
+                    display: block;
+                    width: 4vh;
+                    height: .3vh;
+                    top: 3.5vh;
+                    right: 2.5vh;
+                    cursor: pointer;
+                    background-color: #fff;
+                    z-index: 999;
+                    &:before, &:after{
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 4vh;
+                        height: .3vh;
+                        background-color: #fff;
+                    }
+                    &:before{
+                        top: -.9vh;
+                    }
+                    &:after{
+                        top: .9vh;
+                    }
+                }
+                #toggle.active{
+                    background-color: transparent;
+                    &::before{
+                        transform: rotate(45deg);
+                        top: 0;
+                    }
+                    &::after{
+                        transform: rotate(-45deg);
+                        top: 0;
+                    }
+                }
+                #navigation{
+                    position: fixed;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    right: -100%;
+                    width: 100%;
+                    height: 100vh;
+                    transition: .5s all;
+                    background-color: #00000094;
+                    z-index: 998;
+                    ul{
+                        flex-direction: column;
+                    }
+                }
+                #navigation.active{
+                    right: 0;
+                    top: 0;
+                    ul{
+                        width: 10%;
+                        li{
+                            display: block;
+                            margin-bottom: 5vh;
+                            width: 100%;
+                            a{
+                                color: #D7FF55;
+                                font-size: 1.5rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            
+
+   main{ 
+    .containerTitle{
+                height: 7vh;
+                font-size: 17px;
+                    img{
+                     width: 5%;
+                        }
+                    }
+                
+    header{
+            .adhesion{
+                        
+                    P{
+                        font-size: 13px;
+                        margin-top: 1vh;
+                    }
+                }
+             }
+        
+
+    footer{
+           .copyright{
+            
+                a{
+                font-size: 12px;
+                }
+            }
+         }
+     }
+   }  
+
+       // Breakpoint 425px
+@media screen and (max-width:  425px){
+
+    #toggle{
+                    position: fixed;
+                    display: block;
+                    width: 4vh;
+                    height: .3vh;
+                    top: 3.5vh;
+                    right: 2.5vh;
+                    cursor: pointer;
+                    background-color: #fff;
+                    z-index: 999;
+                    &:before, &:after{
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 4vh;
+                        height: .3vh;
+                        background-color: #fff;
+                    }
+                    &:before{
+                        top: -.9vh;
+                    }
+                    &:after{
+                        top: .9vh;
+                    }
+                }
+                #toggle.active{
+                    background-color: transparent;
+                    &::before{
+                        transform: rotate(45deg);
+                        top: 0;
+                    }
+                    &::after{
+                        transform: rotate(-45deg);
+                        top: 0;
+                    }
+                }
+                #navigation{
+                    position: fixed;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    right: -100%;
+                    width: 100%;
+                    height: 100vh;
+                    transition: .5s all;
+                    background-color: #00000094;
+                    z-index: 998;
+                    ul{
+                        flex-direction: column;
+                    }
+                }
+                #navigation.active{
+                    right: 0;
+                    top: 0;
+                    ul{
+                        width: 10%;
+                        li{
+                            display: block;
+                            margin-bottom: 5vh;
+                            width: 100%;
+                            a{
+                                color: #D7FF55;
+                                font-size: 1.5rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
