@@ -183,7 +183,7 @@ footer .copyright a {
   }
   main header .adhesion P {
     font-size: 18px;
-    margin-top: 5vh;
+    margin-top: 20vh;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -217,7 +217,6 @@ footer .copyright a {
     font-size: 20px;
   }
   main header .nom .la p {
-    margin-right: 9vh;
     font-size: 20px;
   }
   main header .container .cours {
@@ -234,6 +233,7 @@ footer .copyright a {
   }
   main header .adhesion P {
     font-size: 17px;
+    margin-top: 20vh;
   }
   main footer .copyright a {
     font-size: 13px;
@@ -308,19 +308,62 @@ footer .copyright a {
     font-size: 1.5rem;
     text-align: center;
   }
+  main .navbarContainer div img {
+    width: 10%;
+  }
+  main .navbarContainer div nav ul li a {
+    font-size: 1rem;
+  }
+  main .navbarContainer div .navIcons a svg {
+    width: 3vh;
+    height: 3vh;
+  }
   main .containerTitle {
-    height: 7vh;
     font-size: 17px;
   }
   main .containerTitle img {
-    width: 5%;
+    width: 4%;
+  }
+  main header .nom {
+    flex-direction: column;
+  }
+  main header .nom .jo {
+    margin-top: 5vh;
+  }
+  main header .nom .jo p {
+    margin-left: 2vh;
+    font-size: 20px;
+  }
+  main header .nom .ru {
+    margin-top: 5vh;
+  }
+  main header .nom .ru p {
+    font-size: 20px;
+  }
+  main header .nom .la {
+    margin-top: 5vh;
+    margin-left: 5vh;
+  }
+  main header .nom .la p {
+    font-size: 20px;
+  }
+  main header .container .cours {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10vh;
+  }
+  main header .container .courss {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10vh;
   }
   main header .adhesion P {
-    font-size: 13px;
-    margin-top: 1vh;
+    font-size: 16px;
   }
   main footer .copyright a {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -391,5 +434,133 @@ footer .copyright a {
     color: #D7FF55;
     font-size: 1.5rem;
     text-align: center;
+  }
+  .marge {
+    padding: 0vh 5vh;
+  }
+  main .navbarContainer div img {
+    width: 13%;
+  }
+  main .navbarContainer div nav ul li a {
+    font-size: 1rem;
+  }
+  main .navbarContainer div .navIcons a svg {
+    width: 2vh;
+    height: 2vh;
+  }
+  main .containerTitle {
+    font-size: 17px;
+  }
+  main .containerTitle img {
+    width: 4%;
+  }
+  main header .nom {
+    display: unset;
+  }
+  main header .nom .jo p {
+    font-size: 20px;
+  }
+  main header .nom .ru p {
+    font-size: 20px;
+  }
+  main header .nom .la p {
+    font-size: 20px;
+  }
+  main header .container {
+    display: unset;
+  }
+  main header .container .cours {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+  }
+  main header .container .courss {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 2vh;
+  }
+  main header .adhesion {
+    justify-content: start;
+  }
+  main header .adhesion P {
+    font-size: 10px;
+    margin-top: 20vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  #toggle {
+    position: fixed;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    top: 3.5vh;
+    right: 2.5vh;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 999;
+  }
+  #toggle:before, #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    background-color: #fff;
+  }
+  #toggle:before {
+    top: -0.9vh;
+  }
+  #toggle:after {
+    top: 0.9vh;
+  }
+  #toggle.active {
+    background-color: transparent;
+  }
+  #toggle.active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #toggle.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  #navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: rgba(0, 0, 0, 0.5803921569);
+    z-index: 998;
+  }
+  #navigation ul {
+    flex-direction: column;
+  }
+  #navigation.active {
+    right: 0;
+    top: 0;
+  }
+  #navigation.active ul {
+    width: 10%;
+  }
+  #navigation.active ul li {
+    display: block;
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+  #navigation.active ul li a {
+    color: #D7FF55;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  main header .nom .la p {
+    font-size: 20px;
+  }
+  footer .copyright a {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=cours.css.map */
