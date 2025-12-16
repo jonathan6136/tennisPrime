@@ -1,0 +1,492 @@
+// Reset
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// center
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// les a
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+// class marge
+.marge {
+    padding: 0vh 10vh;
+}
+
+// body
+body {
+    font-family: "Roboto", sans-serif;
+
+    main {
+
+        // Navbar
+        .navbarContainer {
+            background-color: #000;
+
+            div {
+                justify-content: space-between;
+
+                img {
+                    width: 10%;
+                }
+
+                nav {
+                    width: 70%;
+                    display: flex;
+                    justify-content: center;
+
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 70%;
+
+                        li {
+                            a {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+
+                .navIcons {
+                    display: flex;
+                    gap: 1.5em;
+
+                    a {
+                        svg {
+                            width: 5vh;
+                            height: 5vh;
+                        }
+                    }
+                }
+            }
+        }
+
+        // header
+        header {
+            height: 80vh;
+            background-image: url(../img/Slideshow_8_d21605d8-9904-40b9-b4cf-f2e20fc0115b.webp);
+            background-position: center;
+            background-repeat: none;
+            background-size: cover;
+
+            h1 {
+                color: #D7FF55;
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                text-align: end;
+                width: 60%;
+            }
+        }
+
+        // field besoin
+        .field {
+            padding: 3vh 0;
+            background-color: #000;
+
+            h6 {
+                color: #fff;
+                font-size: 2.3rem;
+            }
+        }
+
+        // section besoin
+        .besoin {
+            padding: 15vh 0;
+            display: flex;
+            align-items: center;
+
+            .itemBesoin {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8vh;
+                text-align: center;
+                gap: 1em;
+                padding: 2vh 0;
+                
+                img {
+                    width: 60%;
+                }
+
+
+                p {
+                    margin-top: 2vh;
+                    font-size: 1.3rem;
+                    width: 40%;
+                }
+            }
+        }
+
+        // Section produit
+        .produit {
+            .produitContainer {
+                padding: 7vh 0;
+                flex-wrap: wrap;
+                gap: 5em;
+
+                // produitArticle
+                .produitArticle {
+                    background-color: #000;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 40%;
+                    padding: 2vh;
+                    border-radius: 8vh;
+
+                    img {
+                        width: 40%;
+                        margin-left: 2.5vh;
+                    }
+
+                    .textProduit {
+                        color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        justify-content: space-between;
+                        width: 55%;
+                        padding-top: 2vh;
+                        font-size: 1.3rem;
+
+                        button {
+                            margin-right: 2vh;
+                            text-align: center;
+                            width: 50%;
+                            padding: 2vh 2vh;
+                            border-radius: 8vh;
+                            background-color: #D7FF55;
+                            align-self: end;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            transition: 1s;
+
+                            &:hover {
+                                background-color: #729307;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // footer
+        footer {
+            background-color: #000;
+            padding-top: 5vh;
+
+            .iconFooter {
+                display: flex;
+                justify-content: center;
+                gap: 2em;
+
+                svg {
+                    fill: #000;
+                    stroke: #fff;
+                    width: 3vh;
+                    height: 3vh;
+                    cursor: pointer;
+                }
+            }
+
+            .copyright {
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                div {
+                    display: flex;
+                    justify-content: center;
+                    text-decoration: none;
+                    gap: 1em;
+                    align-items: center;
+                    padding-top: 2vh;
+                    p{
+                        font-size: 1em;
+                    }
+                }
+                p{
+                    padding: 2vh;
+                }
+            }
+        }
+    }
+}
+
+// Breakpoint 1024px
+@media screen and (max-width: 1024px) {
+    body {
+        main {
+            .navbarContainer {
+                div {
+                    img {
+                        width: 7%;
+                    }
+
+                    nav {
+                        ul {
+                            li {
+                                a {
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .navIcons {
+                        a svg {
+                            width: 4vh;
+                            height: 4vh;
+                        }
+                    }
+                }
+            }
+
+            .field {
+                h6 {
+                    font-size: 1.7rem;
+                }
+            }
+
+            .textProduit {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+// Breakpoint 768px
+@media screen and (max-width: 768px) {
+    body {
+        main {
+            .navbarContainer {
+                nav {
+                    display: none;
+                }
+                #toggle {
+                    position: fixed;
+                    display: block;
+                    width: 4vh;
+                    height: .3vh;
+                    top: 3.5vh;
+                    right: 2.5vh;
+                    cursor: pointer;
+                    background-color: #fff;
+                    z-index: 999;
+
+                    &:before,
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 4vh;
+                        height: .3vh;
+                        background-color: #fff;
+                    }
+
+                    &:before {
+                        top: -.9vh;
+                    }
+
+                    &:after {
+                        top: .9vh;
+                    }
+                }
+
+                #toggle.active {
+                    background-color: transparent;
+
+                    &::before {
+                        transform: rotate(45deg);
+                        top: 0;
+                    }
+
+                    &::after {
+                        transform: rotate(-45deg);
+                        top: 0;
+                    }
+                }
+
+                #navigation {
+                    position: fixed;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    right: -100%;
+                    width: 100%;
+                    height: 100vh;
+                    transition: .5s all;
+                    background-color: #00000094;
+                    z-index: 998;
+
+                    ul {
+                        flex-direction: column;
+                    }
+                }
+
+                #navigation.active {
+                    right: 0;
+                    top: 0;
+
+                    ul {
+                        width: 10%;
+
+                        li {
+                            display: block;
+                            margin-bottom: 5vh;
+                            width: 100%;
+
+                            a {
+                                color: #D7FF55;
+                                font-size: 1.5rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            header {
+                height: 60vh;
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .field {
+                h6 {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .besoin {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2em;
+
+                .itemBesoin {
+                    width: 30%;
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .produit {
+                .produitContainer {
+                    .produitArticle {
+                        .textProduit {
+                            p {
+                                font-size: 1rem;
+                            }
+
+                            button {
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+            footer{
+                div{
+                    a{
+                        font-size: 0.8rem;
+                    }
+                }
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+// Breakpoint 425px
+@media screen and (max-width: 426px) {
+    body {
+        main {
+            .navbarContainer {
+                #toggle{
+                    top: 4.9vh;
+                }
+                
+                justify-content: space-around;
+                div {
+                    img {
+                        width: 20%;
+                    }
+                }
+            }
+             header {
+                height: 40vh;
+
+                h1 {
+                    font-size: 1rem;
+                }
+            }
+            .field{
+                padding: 2vh 0;
+                h6{
+                    font-size: 1rem;
+                }
+            }
+            .besoin{
+                padding: 5vh 0;
+                gap: 4em;
+                .itemBesoin{
+                    width: 40%;
+                    p{
+                        font-size: 0.7rem;
+                    }
+                    a{
+                        color: #000;
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+            .produit{
+                .produitContainer{
+                    flex-direction: column;
+                    gap: 2em;
+                    .produitArticle{
+                        width: 60%;
+                        .textProduit{
+                            p{
+                                font-size: 0.5em;
+                            }
+                        }
+                    }
+                }
+            }
+            footer{
+                p{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .besoin{
+        flex-wrap: none;
+        flex-direction: column;
+    }
+}

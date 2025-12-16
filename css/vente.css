@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.marge {
+  padding: 0vh 10vh;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+body main .navbarContainer {
+  background-color: #000;
+}
+body main .navbarContainer div {
+  justify-content: space-between;
+}
+body main .navbarContainer div img {
+  width: 10%;
+}
+body main .navbarContainer div nav {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+body main .navbarContainer div nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+body main .navbarContainer div nav ul li a {
+  font-size: 1.5rem;
+}
+body main .navbarContainer div .navIcons {
+  display: flex;
+  gap: 1.5em;
+}
+body main .navbarContainer div .navIcons a svg {
+  width: 5vh;
+  height: 5vh;
+}
+body main header {
+  height: 80vh;
+  background-image: url(../img/Slideshow_8_d21605d8-9904-40b9-b4cf-f2e20fc0115b.webp);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+body main header h1 {
+  color: #D7FF55;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: end;
+  width: 60%;
+}
+body main .field {
+  padding: 3vh 0;
+  background-color: #000;
+}
+body main .field h6 {
+  color: #fff;
+  font-size: 2.3rem;
+}
+body main .besoin {
+  padding: 15vh 0;
+  display: flex;
+  align-items: center;
+}
+body main .besoin .itemBesoin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8vh;
+  text-align: center;
+  gap: 1em;
+  padding: 2vh 0;
+}
+body main .besoin .itemBesoin img {
+  width: 60%;
+}
+body main .besoin .itemBesoin p {
+  margin-top: 2vh;
+  font-size: 1.3rem;
+  width: 40%;
+}
+body main .produit .produitContainer {
+  padding: 7vh 0;
+  flex-wrap: wrap;
+  gap: 5em;
+}
+body main .produit .produitContainer .produitArticle {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding: 2vh;
+  border-radius: 8vh;
+}
+body main .produit .produitContainer .produitArticle img {
+  width: 40%;
+  margin-left: 2.5vh;
+}
+body main .produit .produitContainer .produitArticle .textProduit {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  width: 55%;
+  padding-top: 2vh;
+  font-size: 1.3rem;
+}
+body main .produit .produitContainer .produitArticle .textProduit button {
+  margin-right: 2vh;
+  text-align: center;
+  width: 50%;
+  padding: 2vh 2vh;
+  border-radius: 8vh;
+  background-color: #D7FF55;
+  align-self: end;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 1s;
+}
+body main .produit .produitContainer .produitArticle .textProduit button:hover {
+  background-color: #729307;
+}
+body main footer {
+  background-color: #000;
+  padding-top: 5vh;
+}
+body main footer .iconFooter {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+body main footer .iconFooter svg {
+  fill: #000;
+  stroke: #fff;
+  width: 3vh;
+  height: 3vh;
+  cursor: pointer;
+}
+body main footer .copyright {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body main footer .copyright div {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  gap: 1em;
+  align-items: center;
+  padding-top: 2vh;
+}
+body main footer .copyright div p {
+  font-size: 1em;
+}
+body main footer .copyright p {
+  padding: 2vh;
+}
+
+@media screen and (max-width: 1024px) {
+  body main .navbarContainer div img {
+    width: 7%;
+  }
+  body main .navbarContainer div nav ul li a {
+    font-size: 1rem;
+  }
+  body main .navbarContainer div .navIcons a svg {
+    width: 4vh;
+    height: 4vh;
+  }
+  body main .field h6 {
+    font-size: 1.7rem;
+  }
+  body main .textProduit p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  body main .navbarContainer nav {
+    display: none;
+  }
+  body main .navbarContainer #toggle {
+    position: fixed;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    top: 3.5vh;
+    right: 2.5vh;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 999;
+  }
+  body main .navbarContainer #toggle:before, body main .navbarContainer #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    background-color: #fff;
+  }
+  body main .navbarContainer #toggle:before {
+    top: -0.9vh;
+  }
+  body main .navbarContainer #toggle:after {
+    top: 0.9vh;
+  }
+  body main .navbarContainer #toggle.active {
+    background-color: transparent;
+  }
+  body main .navbarContainer #toggle.active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  body main .navbarContainer #toggle.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  body main .navbarContainer #navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: rgba(0, 0, 0, 0.5803921569);
+    z-index: 998;
+  }
+  body main .navbarContainer #navigation ul {
+    flex-direction: column;
+  }
+  body main .navbarContainer #navigation.active {
+    right: 0;
+    top: 0;
+  }
+  body main .navbarContainer #navigation.active ul {
+    width: 10%;
+  }
+  body main .navbarContainer #navigation.active ul li {
+    display: block;
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+  body main .navbarContainer #navigation.active ul li a {
+    color: #D7FF55;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  body main header {
+    height: 60vh;
+  }
+  body main header h1 {
+    font-size: 1.5rem;
+  }
+  body main .field h6 {
+    font-size: 1.2rem;
+  }
+  body main .besoin {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+  }
+  body main .besoin .itemBesoin {
+    width: 30%;
+  }
+  body main .besoin .itemBesoin p {
+    font-size: 1rem;
+  }
+  body main .produit .produitContainer .produitArticle .textProduit p {
+    font-size: 1rem;
+  }
+  body main .produit .produitContainer .produitArticle .textProduit button {
+    font-size: 0.7rem;
+  }
+  body main footer div a {
+    font-size: 0.8rem;
+  }
+  body main footer p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  body main .navbarContainer {
+    justify-content: space-around;
+  }
+  body main .navbarContainer #toggle {
+    top: 4.9vh;
+  }
+  body main .navbarContainer div img {
+    width: 20%;
+  }
+  body main header {
+    height: 40vh;
+  }
+  body main header h1 {
+    font-size: 1rem;
+  }
+  body main .field {
+    padding: 2vh 0;
+  }
+  body main .field h6 {
+    font-size: 1rem;
+  }
+  body main .besoin {
+    padding: 5vh 0;
+    gap: 4em;
+  }
+  body main .besoin .itemBesoin {
+    width: 40%;
+  }
+  body main .besoin .itemBesoin p {
+    font-size: 0.7rem;
+  }
+  body main .besoin .itemBesoin a {
+    color: #000;
+    font-size: 0.6rem;
+  }
+  body main .produit .produitContainer {
+    flex-direction: column;
+    gap: 2em;
+  }
+  body main .produit .produitContainer .produitArticle {
+    width: 60%;
+  }
+  body main .produit .produitContainer .produitArticle .textProduit p {
+    font-size: 0.5em;
+  }
+  body main footer p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .besoin {
+    flex-wrap: none;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=vente.css.map */
