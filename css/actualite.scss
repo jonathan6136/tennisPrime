@@ -1,0 +1,1149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marge {
+    padding: 0 10vh;
+}
+
+.Accueil {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+
+    img {
+        width: 10%;
+
+    }
+
+    nav {
+        background-color: #000;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 5em;
+        }
+
+        li {}
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .icone {
+        a {
+            color: #fff;
+            gap: 2em;
+        }
+    }
+}
+
+header {
+    background-image: url("/image/19735-balle_de_tennis-raquette-balles_de_tennis-4000x2667.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+    h1 {
+        color: #D7FF55;
+        height: 20vh;
+        width: 100%;
+        padding: 15vh 10vh;
+
+    }
+}
+
+.actualite {
+    background-color: #000;
+    color: #fff;
+
+    .actualiteContainer {
+        display: flex;
+        padding: 0 10vh;
+
+        p {
+            margin: 5vh 2vh;
+        }
+    }
+
+    .match {
+        display: flex;
+        padding: 0 10vh;
+
+        p {
+            margin: 2vh 2vh;
+
+        }
+    }
+
+    .tournoi {
+        display: flex;
+        padding: 0 10vh;
+        padding: 2vh;
+
+        p {
+            padding: 0 10vh;
+        }
+    }
+
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        padding: 2vh;
+        gap: 2em;
+
+        img {
+            width: 15%;
+        }
+    }
+
+    .btn {
+        display: flex;
+        padding: 0 10vh;
+
+        a {
+            color: #000;
+            background-color: #D7FF55;
+            padding: 1vh;
+            border-radius: 2vh;
+            text-decoration: none;
+            margin: 1vh 1vh;
+            margin-bottom: 2vh;
+        }
+    }
+
+    .classement {
+        display: flex;
+        padding: 0 10vh;
+
+        p {
+            margin: 3vh;
+        }
+    }
+}
+
+footer {
+    background-color: #000;
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+
+        svg {
+            fill: #000;
+            stroke: #fff;
+            width: 3vh;
+            height: 3vh;
+        }
+    }
+
+    .copyright {
+        a {
+            display: flex;
+            justify-content: center;
+            margin: 2vh 5vh;
+            margin-bottom: 2vh 5vh;
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+            padding: 2vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .marge {
+        padding: 0 10vh;
+    }
+
+    .Accueil {
+        display: flex;
+        align-items: center;
+        background-color: #000;
+
+        img {
+            width: 10%;
+
+        }
+
+        nav {
+            background-color: #000;
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 5em;
+            }
+
+            li {}
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        .icone {
+            a {
+                color: #fff;
+                gap: 2em;
+            }
+        }
+    }
+
+    header {
+        background-image: url("/image/19735-balle_de_tennis-raquette-balles_de_tennis-4000x2667.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+
+        h1 {
+            color: #D7FF55;
+            height: 20vh;
+            width: 100%;
+            padding: 15vh 10vh;
+
+        }
+    }
+
+    .actualite {
+        background-color: #000;
+        color: #fff;
+
+        .actualiteContainer {
+            display: flex;
+            padding: 0 10vh;
+
+            p {
+                margin: 5vh 2vh;
+            }
+        }
+
+        .match {
+            display: flex;
+            padding: 0 10vh;
+
+            p {
+                margin: 2vh 2vh;
+
+            }
+        }
+
+        .tournoi {
+            display: flex;
+            padding: 0 10vh;
+            padding: 2vh;
+
+            p {
+                padding: 0 9vh;
+            }
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            padding: 2vh;
+            gap: 2em;
+
+            img {
+                width: 15%;
+            }
+        }
+
+        .btn {
+            display: flex;
+            padding: 0 10vh;
+
+            a {
+                color: #000;
+                background-color: #D7FF55;
+                padding: 1vh;
+                border-radius: 2vh;
+                text-decoration: none;
+                margin: 1vh 1vh;
+                margin-bottom: 2vh;
+            }
+        }
+
+        .classement {
+            display: flex;
+            padding: 0 10vh;
+
+            p {
+                margin: 3vh;
+            }
+        }
+    }
+
+    footer {
+        background-color: #000;
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+
+            svg {
+                fill: #000;
+                stroke: #fff;
+                width: 3vh;
+                height: 3vh;
+            }
+        }
+
+        .copyright {
+            a {
+                display: flex;
+                justify-content: center;
+                margin: 2vh 5vh;
+                margin-bottom: 2vh 5vh;
+                text-decoration: none;
+                text-align: center;
+                color: #fff;
+                padding: 2vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .marge {
+        padding: 0 10vh;
+    }
+
+    .Accueil {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000;
+
+        img {
+            width: 10%;
+
+        }
+
+        #toggle {
+            position: fixed;
+            display: block;
+            width: 4vh;
+            height: .3vh;
+            top: 4.5vh;
+            right: 3.5vh;
+            cursor: pointer;
+            background-color: #fff;
+            z-index: 999;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 4vh;
+                height: .3vh;
+                background-color: #fff;
+            }
+
+            &:before {
+                top: -.9vh;
+            }
+
+            &:after {
+                top: .9vh;
+            }
+        }
+
+        #toggle.active {
+            background-color: transparent;
+
+            &::before {
+                transform: rotate(45deg);
+                top: 0;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+        }
+
+        #navigation {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            transition: .5s all;
+            background-color: #00000094;
+            z-index: 998;
+
+            ul {
+                flex-direction: column;
+            }
+        }
+
+        #navigation.active {
+            right: 0;
+            top: 0;
+
+            ul {
+                width: 10%;
+
+                li {
+                    display: block;
+                    margin-bottom: 5vh;
+                    width: 100%;
+
+                    a {
+                        color: #D7FF55;
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        background-color: #000;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 5em;
+        }
+
+        li {}
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .icone {
+        a {
+            gap: 2em;
+            color: #fff;
+            svg {
+                width: 5vh;
+                height: 5vh;
+            }
+        }
+    }
+}
+
+header {
+    background-image: url("/image/19735-balle_de_tennis-raquette-balles_de_tennis-4000x2667.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+    h1 {
+        color: #D7FF55;
+        height: 20vh;
+        width: 100%;
+        padding: 15vh 10vh;
+
+    }
+}
+
+.actualite {
+    background-color: #000;
+    color: #fff;
+
+    .actualiteContainer {
+        display: flex;
+        padding: 0 10vh;
+
+        p {
+            margin: 5vh 2vh;
+        }
+    }
+
+    .match {
+        display: flex;
+        padding: 0 10vh;
+        font-size: 2vh;
+
+        p {
+            margin: 2vh 2vh;
+
+        }
+    }
+
+    .tournoi {
+        display: flex;
+        padding: 0 10vh;
+        padding: 1vh;
+
+        p {
+            padding: 0 3.5vh;
+            font-size: 2vh;
+        }
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        padding: 1vh;
+        gap: 2em;
+
+        img {
+            width: 15%;
+        }
+    }
+
+    .btn {
+        display: flex;
+        padding: 0 10vh;
+
+        a {
+            color: #000;
+            background-color: #D7FF55;
+            padding: 1vh;
+            border-radius: 2vh;
+            text-decoration: none;
+            margin: 4vh 1vh;
+            margin-bottom: 2vh;
+        }
+    }
+
+    .classement {
+        display: flex;
+        padding: 0 10vh;
+
+        p {
+            margin: 2vh;
+        }
+    }
+}
+
+footer {
+    background-color: #000;
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+
+        svg {
+            fill: #000;
+            stroke: #fff;
+            width: 3vh;
+            height: 3vh;
+        }
+    }
+
+    .copyright {
+        a {
+            display: flex;
+            justify-content: center;
+            margin: 2vh 5vh;
+            margin-bottom: 2vh 5vh;
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+            padding: 2vh;
+        }
+    }
+}
+
+
+@media screen and (max-width : 425px) {
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .marge {
+        padding: 0 10vh;
+    }
+
+    .Accueil {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000;
+
+        img {
+            width: 10%;
+
+        }
+
+        #toggle {
+            position: fixed;
+            display: block;
+            width: 4vh;
+            height: .3vh;
+            top: 4.5vh;
+            right: 3.5vh;
+            cursor: pointer;
+            background-color: #fff;
+            z-index: 999;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 4vh;
+                height: .3vh;
+                background-color: #fff;
+            }
+
+            &:before {
+                top: -.9vh;
+            }
+
+            &:after {
+                top: .9vh;
+            }
+        }
+
+        #toggle.active {
+            background-color: transparent;
+
+            &::before {
+                transform: rotate(45deg);
+                top: 0;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+        }
+
+        #navigation {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            transition: .5s all;
+            background-color: #00000094;
+            z-index: 998;
+
+            ul {
+                flex-direction: column;
+            }
+        }
+
+        #navigation.active {
+            right: 0;
+            top: 0;
+
+            ul {
+                width: 10%;
+
+                li {
+                    display: block;
+                    margin-bottom: 5vh;
+                    width: 100%;
+
+                    a {
+                        color: #D7FF55;
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        background-color: #000;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 5em;
+        }
+
+        li {}
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .icone {
+        a {
+            gap: 2em;
+            color: #fff;
+            svg {
+                width: 5vh;
+                height: 5vh;
+            }
+        }
+    }
+}
+
+header {
+    background-image: url("/image/19735-balle_de_tennis-raquette-balles_de_tennis-4000x2667.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+    h1 {
+        color: #D7FF55;
+        height: 20vh;
+        width: 100%;
+        padding: 15vh 10vh;
+
+    }
+}
+
+.actualite {
+    background-color: #000;
+    color: #fff;
+
+    .actualiteContainer {
+        display: flex;
+        padding: 0 10vh;
+
+        p {
+            margin: 5vh 2vh;
+             font-size: 3vh;
+        }
+    }
+
+    .match {
+        display: flex;
+        padding: 0 10vh;
+        font-size: 2vh;
+
+        p {
+            margin: 2vh 2vh;
+
+        }
+    }
+
+    .tournoi {
+        display: flex;
+        padding: 1 10vh;
+        margin: 2vh 2vh;
+
+        p {
+            padding: 0 3.5vh;
+            font-size: 2vh;
+        }
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1vh;
+        gap: 1em;
+
+        img {
+            width: 15%;
+        }
+    }
+
+    .btn {
+        display: flex;
+        padding: 0 10vh;
+
+        a {
+            color: #000;
+            background-color: #D7FF55;
+            padding: 0.4vh;
+            border-radius: 3vh;
+            text-decoration: none;
+            margin: 4vh 1vh;
+            margin-bottom: 2vh;
+            font-size: 3vh;
+        }
+    }
+
+    .classement {
+        display: flex;
+        padding: 0 10vh;
+        font-size: 2.5vh;
+
+        p {
+            margin: 2vh;
+        }
+    }
+}
+
+footer {
+    background-color: #000;
+
+    .footer {
+        gap: 2em;
+
+        svg {
+            fill: #000;
+            stroke: #fff;
+            width: 3vh;
+            height: 3vh;
+        }
+    }
+
+    .copyright {
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 2vh 5vh;
+            margin-bottom: 2vh 5vh;
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+            padding: 2vh;
+            font-size: 3vh;
+        }
+    }
+}
+@media screen and (max-width : 375px) {
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .marge {
+        padding: 0 10vh;
+    }
+
+    .Accueil {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000;
+
+        img {
+            width: 10%;
+
+        }
+
+        #toggle {
+            position: fixed;
+            display: block;
+            width: 4vh;
+            height: .3vh;
+            top: 4.5vh;
+            right: 3.5vh;
+            cursor: pointer;
+            background-color: #fff;
+            z-index: 999;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 4vh;
+                height: .3vh;
+                background-color: #fff;
+            }
+
+            &:before {
+                top: -.9vh;
+            }
+
+            &:after {
+                top: .9vh;
+            }
+        }
+
+        #toggle.active {
+            background-color: transparent;
+
+            &::before {
+                transform: rotate(45deg);
+                top: 0;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+        }
+
+        #navigation {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            transition: .5s all;
+            background-color: #00000094;
+            z-index: 998;
+
+            ul {
+                flex-direction: column;
+            }
+        }
+
+        #navigation.active {
+            right: 0;
+            top: 0;
+
+            ul {
+                width: 10%;
+
+                li {
+                    display: block;
+                    margin-bottom: 5vh;
+                    width: 100%;
+
+                    a {
+                        color: #D7FF55;
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        background-color: #000;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 5em;
+        }
+
+        li {}
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .icone {
+        a {
+            gap: 2em;
+            color: #fff;
+            svg {
+                width: 5vh;
+                height: 5vh;
+            }
+        }
+    }
+}
+
+header {
+    background-image: url("/image/19735-balle_de_tennis-raquette-balles_de_tennis-4000x2667.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+    h1 {
+        color: #D7FF55;
+        height: 20vh;
+        width: 100%;
+        padding: 15vh 10vh;
+
+    }
+}
+
+.actualite {
+    background-color: #000;
+    color: #fff;
+
+    .actualiteContainer {
+        display: flex;
+        padding: 0 10vh;
+
+        p {
+            margin: 5vh 2vh;
+             font-size: 3vh;
+        }
+    }
+
+    .match {
+        display: flex;
+        padding: 0 10vh;
+        font-size: 2vh;
+
+        p {
+            margin: 2vh 2vh;
+
+        }
+    }
+
+    .tournoi {
+        display: flex;
+        padding: 1 10vh;
+        margin: 2vh 2vh;
+
+        p {
+            padding: 0 3.5vh;
+            font-size: 2vh;
+        }
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1vh;
+        gap: 1em;
+
+        img {
+            width: 15%;
+        }
+    }
+
+    .btn {
+        display: flex;
+        padding: 0 10vh;
+
+        a {
+            color: #000;
+            background-color: #D7FF55;
+            padding: 0.4vh;
+            border-radius: 3vh;
+            text-decoration: none;
+            margin: 4vh 1vh;
+            margin-bottom: 2vh;
+            font-size: 3vh;
+        }
+    }
+
+    .classement {
+        display: flex;
+        padding: 0 10vh;
+        font-size: 2.5vh;
+
+        p {
+            margin: 2vh;
+        }
+    }
+}
+
+footer {
+    background-color: #000;
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+
+        svg {
+            fill: #000;
+            stroke: #fff;
+            width: 3vh;
+            height: 3vh;
+        }
+    }
+
+    .copyright {
+        a {
+            display: flex;
+            justify-content: center;
+            margin: 2vh 5vh;
+            margin-bottom: 2vh 5vh;
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+            padding: 2vh;
+            font-size: 2vh;
+        }
+    }
+}
+
