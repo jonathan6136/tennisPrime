@@ -1,782 +1,570 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-  
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-body{
-    font-family: "Roboto", sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 /* nav */
-
-
-
 .navbarContainer {
-
-            background-color: #000;
-
-            div {
-                justify-content: space-between;
-
-                img {
-                    width: 10%;
-
-                }
-
-                nav {
-                    width: 50%;
-
-                    ul {
-                        display: flex;
-                        justify-content: space-around;
-
-                    }
-
-
-                }
-            }
- }
+  background-color: #000;
+}
+.navbarContainer div {
+  justify-content: space-between;
+}
+.navbarContainer div img {
+  width: 10%;
+}
+.navbarContainer div nav {
+  width: 50%;
+}
+.navbarContainer div nav ul {
+  display: flex;
+  justify-content: space-around;
+}
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .marge {
-    padding: 0vh 10vh;
+  padding: 0vh 10vh;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
-
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Header */
-
-main{
-    .containerTitle{
-          
-    background-color:#D7FF55;
-    width: 100% ;
-    height: 6VH;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 19px;
-    color:black;
-    display: flex;
-    justify-content: center;
-        img{
-            width: 5%;
-         }
-    } 
+main .containerTitle {
+  background-color: #D7FF55;
+  width: 100%;
+  height: 6VH;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+main .containerTitle img {
+  width: 5%;
 }
 
-   header{
-    background-image: url(../img/istockphoto-832170050-170667a.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 116VH;
-
-    .titlee{
-        text-align: center;
-        font-size: 26px;
-        text-transform: uppercase;
-        padding: 4vh;
-    }
-
-    .nom{
-        display: flex;
-        justify-content: space-between;
-        
-        .jo{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 10vh;
-            p{
-                font-size: 25px;
-                font-weight:900;
-                margin-left: 5vh;
-                
-            }
-            
-    }
+header {
+  background-image: url(../img/istockphoto-832170050-170667a.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 116VH;
 }
-.ru{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15vh;
-    p{
-        font-size: 25px;
-        font-weight:900;  
-    }
+header .titlee {
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+  padding: 4vh;
 }
-.la{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10vh;
-    p{
-        font-size: 25px;
-        font-weight: 900;
-        margin-right: 5vh;
-        }
-    }
+header .nom {
+  display: flex;
+  justify-content: space-between;
+}
+header .nom .jo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+header .nom .jo p {
+  font-size: 25px;
+  font-weight: 900;
+  margin-left: 5vh;
+}
+header .ru {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15vh;
+}
+header .ru p {
+  font-size: 25px;
+  font-weight: 900;
+}
+header .la {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+header .la p {
+  font-size: 25px;
+  font-weight: 900;
+  margin-right: 5vh;
 }
 
-
-.container{
-    display: flex;
-    justify-content: center;
-    margin-top: 12vh;
-    gap: 10vh;
-
-  
-    
-    .cours{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #fff;
-        font-size: 36px;
-
-        .price{
-            margin-top: 3vh;
-       
-        }
-        
-         ul{ 
-            
-            margin-top: 3vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-                
-        }
-       
-    }
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 12vh;
+  gap: 10vh;
 }
-.courss{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #fff;
-        font-size: 36px;
+.container .cours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 36px;
+}
+.container .cours .price {
+  margin-top: 3vh;
+}
+.container .cours ul {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    .price{
-        margin-top: 3vh;
-       
-    }
-            ul{ 
-                margin-top: 3vh;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-       
-        }
-       
-    
-        .adhesion{
-            color: #fff;
-            font-size: 20px;
-            display: flex;
-            justify-content: end;
-            margin-right: 1vh;
-        
-        }
-  
+.courss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 36px;
+}
+.courss .price {
+  margin-top: 3vh;
+}
+.courss ul {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  
-footer{
-    background-color: #000;
-    .footer{
-        display: flex;
-        justify-content: center;
-        gap:2em;
-       svg{
-        fill:#000;
-        stroke:#fff;
-        width:3vh;
-        height:3vh;
-       }
-    }
-    .copyright{
-        a{
-             display: flex;
-             justify-content: center;
-             margin: 2vh 5vh ;
-             margin-bottom: 2vh 5vh;
-            text-decoration: none;
-            text-align: center;
-            color:#fff;
-            padding:2vh;
-        }
-    }
+.adhesion {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+  margin-right: 1vh;
+}
+
+footer {
+  background-color: #000;
+}
+footer .footer {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+footer .footer svg {
+  fill: #000;
+  stroke: #fff;
+  width: 3vh;
+  height: 3vh;
+}
+footer .copyright a {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 5vh;
+  margin-bottom: 2vh 5vh;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: 2vh;
+}
+
+@media screen and (max-width: 1440px) {
+  main .containerTitle {
+    font-size: 22px;
   }
-
-  
-
-@media screen and (max-width: 1440px){
-
-    main{
-    .containerTitle{
-        font-size: 22px;
-    }
- header{
-       .adhesion{
-            
-                P{
-                    font-size: 18px;
-                    margin-top: 20vh;
-                }
-            }
-         }
-    }
+  main header .adhesion P {
+    font-size: 18px;
+    margin-top: 20vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .navbarContainer div img {
+    width: 7%;
+  }
+  main .navbarContainer div nav ul li a {
+    font-size: 1rem;
+  }
+  main .navbarContainer div .navIcons a svg {
+    width: 4vh;
+    height: 4vh;
+  }
+  main .containerTitle {
+    height: 5vh;
+  }
+  main .containerTitle h1 {
+    font-size: 27px;
+  }
+  main .containerTitle img {
+    width: 6%;
+  }
+  main header .titlee h2 {
+    font-size: 25px;
+  }
+  main header .nom .jo p {
+    margin-left: 9vh;
+    font-size: 20px;
+  }
+  main header .nom .ru p {
+    font-size: 20px;
+  }
+  main header .nom .la p {
+    font-size: 20px;
+  }
+  main header .container .cours {
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    margin-top: 10vh;
+  }
+  main header .container .courss {
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    margin-top: 10vh;
+  }
+  main header .adhesion P {
+    font-size: 17px;
+    margin-top: 20vh;
+  }
+  main footer .copyright a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #toggle {
+    position: fixed;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    top: 3.5vh;
+    right: 2.5vh;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 999;
+  }
+  #toggle:before, #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    background-color: #fff;
+  }
+  #toggle:before {
+    top: -0.9vh;
+  }
+  #toggle:after {
+    top: 0.9vh;
+  }
+  #toggle.active {
+    background-color: transparent;
+  }
+  #toggle.active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #toggle.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  #navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: rgba(0, 0, 0, 0.5803921569);
+    z-index: 998;
+  }
+  #navigation ul {
+    flex-direction: column;
+  }
+  #navigation.active {
+    right: 0;
+    top: 0;
+  }
+  #navigation.active ul {
+    width: 10%;
+  }
+  #navigation.active ul li {
+    display: block;
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+  #navigation.active ul li a {
+    color: #D7FF55;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  main .navbarContainer div img {
+    width: 10%;
+  }
+  main .navbarContainer div nav ul li a {
+    font-size: 1rem;
+  }
+  main .navbarContainer div .navIcons a svg {
+    width: 3vh;
+    height: 3vh;
+  }
+  main .containerTitle {
+    font-size: 17px;
+  }
+  main .containerTitle img {
+    width: 4%;
+  }
+  main header .nom {
+    flex-direction: column;
+  }
+  main header .nom .jo {
+    margin-top: 5vh;
+  }
+  main header .nom .jo p {
+    margin-left: 2vh;
+    font-size: 20px;
+  }
+  main header .nom .ru {
+    margin-top: 5vh;
+  }
+  main header .nom .ru p {
+    font-size: 20px;
+  }
+  main header .nom .la {
+    margin-top: 5vh;
+    margin-left: 5vh;
+  }
+  main header .nom .la p {
+    font-size: 20px;
+  }
+  main header .container .cours {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10vh;
+  }
+  main header .container .courss {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10vh;
+  }
+  main header .adhesion P {
+    font-size: 16px;
+  }
+  main footer .copyright a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #toggle {
+    position: fixed;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    top: 3.5vh;
+    right: 2.5vh;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 999;
+  }
+  #toggle:before, #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    background-color: #fff;
+  }
+  #toggle:before {
+    top: -0.9vh;
+  }
+  #toggle:after {
+    top: 0.9vh;
+  }
+  #toggle.active {
+    background-color: transparent;
+  }
+  #toggle.active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #toggle.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  #navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: rgba(0, 0, 0, 0.5803921569);
+    z-index: 998;
+  }
+  #navigation ul {
+    flex-direction: column;
+  }
+  #navigation.active {
+    right: 0;
+    top: 0;
+  }
+  #navigation.active ul {
+    width: 10%;
+  }
+  #navigation.active ul li {
+    display: block;
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+  #navigation.active ul li a {
+    color: #D7FF55;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .marge {
+    padding: 0vh 5vh;
+  }
+  main .navbarContainer div img {
+    width: 13%;
+  }
+  main .navbarContainer div nav ul li a {
+    font-size: 1rem;
+  }
+  main .navbarContainer div .navIcons a svg {
+    width: 2vh;
+    height: 2vh;
+  }
+  main .containerTitle {
+    font-size: 17px;
+  }
+  main .containerTitle img {
+    width: 4%;
+  }
+  main header .nom {
+    display: unset;
+  }
+  main header .nom .jo p {
+    font-size: 20px;
+  }
+  main header .nom .ru p {
+    font-size: 20px;
+  }
+  main header .nom .la p {
+    font-size: 20px;
+  }
+  main header .container {
+    display: unset;
+  }
+  main header .container .cours {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+  }
+  main header .container .courss {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 2vh;
+  }
+  main header .adhesion {
+    justify-content: start;
+  }
+  main header .adhesion P {
+    font-size: 10px;
+    margin-top: 20vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  #toggle {
+    position: fixed;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    top: 3.5vh;
+    right: 2.5vh;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 999;
+  }
+  #toggle:before, #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4vh;
+    height: 0.3vh;
+    background-color: #fff;
+  }
+  #toggle:before {
+    top: -0.9vh;
+  }
+  #toggle:after {
+    top: 0.9vh;
+  }
+  #toggle.active {
+    background-color: transparent;
+  }
+  #toggle.active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #toggle.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  #navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: rgba(0, 0, 0, 0.5803921569);
+    z-index: 998;
+  }
+  #navigation ul {
+    flex-direction: column;
+  }
+  #navigation.active {
+    right: 0;
+    top: 0;
+  }
+  #navigation.active ul {
+    width: 10%;
+  }
+  #navigation.active ul li {
+    display: block;
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+  #navigation.active ul li a {
+    color: #D7FF55;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+main header .nom .la p {
+  font-size: 20px;
 }
 
-
-
-
-@media screen and (max-width: 1024px){
-    main{
-        .navbarContainer{
-                div{
-                    img{
-                        width: 7%;
-                    }
-                    nav{
-                        ul{
-                            li{
-                                a{
-                                    font-size: 1rem;
-                                }
-                            }
-                        }
-                    }
-                    .navIcons{
-                        a svg{
-                            width: 4vh;
-                            height: 4vh;
-                        }
-                    }
-                }
-            }
-        .containerTitle{
-                height: 5vh;
-                h1{
-                font-size: 27px;
-                 }
-                img{
-                     width: 6%;
-                    }
-                }
-           
-
-    header{
-            .titlee{
-                    h2{
-                    font-size: 25px;
-                    }
-                }
-             
-
-    .nom{
-            .jo{
-                p{
-                    margin-left: 9vh;  
-                    font-size: 20px;
-                 }
-            }    
-        }
-    
-    .nom{
-            .ru{
-                p{
-                font-size: 20px;
-                 }
-            }    
-        }
- .nom{
-            .la{
-                p{
-                    
-                    font-size: 20px;
-                 }
-            }    
-        }
-
-    .container{
-            .cours{
-                    font-size: 22px;
-                    color: #000;
-                    font-weight: 600;
-                    margin-top: 10vh;
-                  }
-                .courss{
-                    font-size: 22px;
-                    color: #000;
-                    font-weight: 600;
-                    margin-top: 10vh;
-                }
-           }  
-        
-        .adhesion{
-            
-                P{
-                    font-size: 17px;
-                    margin-top: 20vh;
-                }
-            }
-         }
-
-         footer{
-           
-            .copyright{
-                a{
-                     font-size: 13px;
-                }
-            }
-         }
-    }
-}
-    
-@media screen and (max-width: 768px){
-#toggle{
-                    position: fixed;
-                    display: block;
-                    width: 4vh;
-                    height: .3vh;
-                    top: 3.5vh;
-                    right: 2.5vh;
-                    cursor: pointer;
-                    background-color: #fff;
-                    z-index: 999;
-                    &:before, &:after{
-                        content: "";
-                        position: absolute;
-                        display: block;
-                        width: 4vh;
-                        height: .3vh;
-                        background-color: #fff;
-                    }
-                    &:before{
-                        top: -.9vh;
-                    }
-                    &:after{
-                        top: .9vh;
-                    }
-                }
-                #toggle.active{
-                    background-color: transparent;
-                    &::before{
-                        transform: rotate(45deg);
-                        top: 0;
-                    }
-                    &::after{
-                        transform: rotate(-45deg);
-                        top: 0;
-                    }
-                }
-                #navigation{
-                    position: fixed;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    right: -100%;
-                    width: 100%;
-                    height: 100vh;
-                    transition: .5s all;
-                    background-color: #00000094;
-                    z-index: 998;
-                    ul{
-                        flex-direction: column;
-                    }
-                }
-                #navigation.active{
-                    right: 0;
-                    top: 0;
-                    ul{
-                        width: 10%;
-                        li{
-                            display: block;
-                            margin-bottom: 5vh;
-                            width: 100%;
-                            a{
-                                color: #D7FF55;
-                                font-size: 1.5rem;
-                                text-align: center;
-                            }
-                        }
-                    }
-                }
-            
-
-   main{ 
-
-       
-        .navbarContainer{
-                div{
-                    img{
-                        width: 10%;
-                    }
-                    nav{
-                        ul{
-                            li{
-                                a{
-                                    font-size: 1rem;
-                                }
-                            }
-                        }
-                    }
-                    .navIcons{
-                        a svg{
-                            width: 3vh;
-                            height: 3vh;
-                        }
-                    }
-                }
-            }
-
-           
-    .containerTitle{
-             
-                font-size: 17px;
-                    img{
-                     width: 4%;
-                        }
-                    }
-                
-    header{
-
-            .nom{   flex-direction: column;
-
-                .jo{    margin-top: 5vh;
-                    p{
-                        margin-left: 2vh;
-                        font-size: 20px;
-                    }
-                 }    
-            }
-    
-    .nom{
-            .ru{ margin-top: 5vh;
-                p{
-                font-size: 20px;
-                 }
-            }    
-        }
- .nom{
-            .la{ margin-top: 5vh;
-                margin-left: 5vh;
-                p{
-                    
-                    font-size: 20px;
-                 }
-            }    
-        }
-
-            .container{
-            .cours{
-                    font-size: 22px;
-                    color: #fff;
-                    font-weight: 600;
-                    margin-top: 10vh;
-                  }
-                .courss{
-                    font-size: 22px;
-                    color: #fff;
-                    font-weight: 600;
-                    margin-top: 10vh;
-                }
-           }  
-            .adhesion{
-                        
-                    P{
-                        font-size: 16px;
-                        
-                    }
-                }
-             }
-        
-
-    footer{
-           .copyright{
-            
-                a{
-                font-size: 14px;
-                }
-            }
-         }
-     }
-   }  
-
-       
-@media screen and (max-width:  425px){
-
-    #toggle{
-                    position: fixed;
-                    display: block;
-                    width: 4vh;
-                    height: .3vh;
-                    top: 3.5vh;
-                    right: 2.5vh;
-                    cursor: pointer;
-                    background-color: #fff;
-                    z-index: 999;
-                    &:before, &:after{
-                        content: "";
-                        position: absolute;
-                        display: block;
-                        width: 4vh;
-                        height: .3vh;
-                        background-color: #fff;
-                    }
-                    &:before{
-                        top: -.9vh;
-                    }
-                    &:after{
-                        top: .9vh;
-                    }
-                }
-                #toggle.active{
-                    background-color: transparent;
-                    &::before{
-                        transform: rotate(45deg);
-                        top: 0;
-                    }
-                    &::after{
-                        transform: rotate(-45deg);
-                        top: 0;
-                    }
-                }
-                #navigation{
-                    position: fixed;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    right: -100%;
-                    width: 100%;
-                    height: 100vh;
-                    transition: .5s all;
-                    background-color: #00000094;
-                    z-index: 998;
-                    ul{
-                        flex-direction: column;
-                    }
-                }
-                #navigation.active{
-                    right: 0;
-                    top: 0;
-                    ul{
-                        width: 10%;
-                        li{
-                            display: block;
-                            margin-bottom: 5vh;
-                            width: 100%;
-                            a{
-                                color: #D7FF55;
-                                font-size: 1.5rem;
-                                text-align: center;
-                            }
-                        }
-                    }
-                }
-
-        .marge{
-            padding: 0vh 5vh;
-                }
-
-
-        main{ 
-
-       
-        .navbarContainer{
-                div{
-                    img{
-                        width: 13%;
-                    }
-                    nav{
-                        ul{
-                            li{
-                                a{
-                                    font-size: 1rem;
-                                }
-                            }
-                        }
-                    }
-                    .navIcons{
-                        a svg{
-                            width: 2vh;
-                            height: 2vh;
-                        }
-                    }
-                }
-            }
-
-           
-    .containerTitle{
-             
-                font-size: 17px;
-                    img{
-                     width: 4%;
-                        }
-                    }
-    header{
-
-            .nom{ display: unset;
-            .jo{
-                p{
-                   
-                    font-size: 20px;
-                 }
-            }    
-        }
-    
-            .nom{
-            .ru{
-                p{
-                font-size: 20px;
-                 }
-            }    
-        }
-            .nom{
-            .la{
-                p{
-                    
-                    font-size: 20px;
-                 }
-            }    
-        }
-
-
-            .container{
-                display: unset;
-              
-            .cours{
-                    font-size: 22px;
-                    color: #fff;
-                    font-weight: 600;
-                    
-                  }
-                .courss{
-                    font-size: 22px;
-                    color: #fff;
-                    font-weight: 600;
-                    margin-top: 2vh;
-                }
-           }  
-            .adhesion{
-                      justify-content: start;
-                      
-                      
-                    P{
-                        font-size: 10px;
-                         margin-top: 20vh;
-                         
-                    }
-                }
-             }
-            }
-        }
-
-@media screen and (max-width:  320px){
-
-    #toggle{
-                    position: fixed;
-                    display: block;
-                    width: 4vh;
-                    height: .3vh;
-                    top: 3.5vh;
-                    right: 2.5vh;
-                    cursor: pointer;
-                    background-color: #fff;
-                    z-index: 999;
-                    &:before, &:after{
-                        content: "";
-                        position: absolute;
-                        display: block;
-                        width: 4vh;
-                        height: .3vh;
-                        background-color: #fff;
-                    }
-                    &:before{
-                        top: -.9vh;
-                    }
-                    &:after{
-                        top: .9vh;
-                    }
-                }
-                #toggle.active{
-                    background-color: transparent;
-                    &::before{
-                        transform: rotate(45deg);
-                        top: 0;
-                    }
-                    &::after{
-                        transform: rotate(-45deg);
-                        top: 0;
-                    }
-                }
-                #navigation{
-                    position: fixed;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    right: -100%;
-                    width: 100%;
-                    height: 100vh;
-                    transition: .5s all;
-                    background-color: #00000094;
-                    z-index: 998;
-                    ul{
-                        flex-direction: column;
-                    }
-                }
-                #navigation.active{
-                    right: 0;
-                    top: 0;
-                    ul{
-                        width: 10%;
-                        li{
-                            display: block;
-                            margin-bottom: 5vh;
-                            width: 100%;
-                            a{
-                                color: #D7FF55;
-                                font-size: 1.5rem;
-                                text-align: center;
-                            }
-                        }
-                    }
-                }  
-                }
-    main{
-        header{
-            .nom{
-            .la{
-               
-                
-                p{
-                    
-                    font-size: 20px;
-                 }
-            }    
-        }
-     }
-} 
-
-    footer{
-           .copyright{
-            
-                a{
-                font-size: 12px;
-                }
-            }
-         }
-     
+footer .copyright a {
+  font-size: 12px;
+}/*# sourceMappingURL=cours.css.map */
