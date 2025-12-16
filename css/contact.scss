@@ -1,0 +1,358 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+} 
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+.marge{
+    padding: 0 10vh;
+}
+    .Accueil{
+        display: flex;
+        align-items: center;
+        background-color: #000;
+         img{
+            width:10%;
+        
+        }
+    nav{
+        background-color: #000;
+        width:80%;
+        display: flex;
+        justify-content: space-around;
+        ul{
+            display:flex;
+            align-items: center;
+            gap:5em;
+        }
+        a {
+           color: #fff;
+           text-decoration: none;
+        }
+    }
+    .icone {
+      a{
+         color: #fff;
+         gap: 2em;
+      }
+     }
+   }
+   header{
+    background-image: url("/image/19735-balle_de_tennis-raquette-balles_de_tennis-4000x2667.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    background-position: center;
+      h1{
+        color:#D7FF55;
+        height:20vh;
+        width: 100%;
+        padding: 15vh 10vh;
+
+    }
+}
+.formulaire{
+    background-color: #000;
+    padding:2vh 2vh;
+     text-align: center;
+    h2{
+        display: flex;
+        justify-content: center;
+        color:#fff;
+        padding:2vh 2vh;
+    }
+    div{
+        color:#fff;
+        text-align: center;
+         padding:2vh 2vh;
+    }
+    #submit{
+        padding:1vh;
+        border-radius: 5vh;
+        color:#000;
+        background-color: #D7FF55;
+        text-decoration: none;
+        margin: 2vh 2vh;
+    }
+}
+   
+
+
+ footer{
+    background-color: #000;
+    .footer{
+        display: flex;
+        justify-content: center;
+        gap:2em;
+       svg{
+        fill:#000;
+        stroke:#fff;
+        width:3vh;
+        height:3vh;
+       }
+    }
+    .copyright{
+        a{
+             display: flex;
+             justify-content: center;
+             margin: 2vh 5vh ;
+             margin-bottom: 2vh 5vh;
+            text-decoration: none;
+            text-align: center;
+            color:#fff;
+            padding:2vh;
+        }
+    }
+  }
+  @media screen and (max-width: 768px) {
+  #toggle {
+    display: block;
+    position: fixed;
+    top: 4vh;
+    right: 4vh;
+    width: 4vh;
+    height: 0.4vh;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 4vh;
+      height: 0.4vh;
+      background-color: #fff;
+      transition: 0.4s;
+    }
+
+    &::before {
+      top: -1vh;
+    }
+
+    &::after {
+      top: 1vh;
+    }
+
+    &.active {
+      background-color: transparent;
+    }
+
+    &.active::before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+
+    &.active::after {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+  }
+  
+  #navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    z-index: 999;
+
+    ul {
+      flex-direction: column;
+      gap: 4vh;
+    }
+
+    a {
+      font-size: 1.5rem;
+      color: #D7FF55;
+    }
+
+    &.active {
+      right: 0;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .marge {
+    padding: 0 6vh;
+  }
+
+  .Accueil nav ul {
+    gap: 3em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Accueil {
+    img {
+      width: 18%;
+    }
+
+    nav ul {
+      gap: 2em;
+    }
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .marge {
+    padding: 0 4vh;
+  }
+
+  .Accueil {
+    justify-content: space-between;
+
+    img {
+      width: 25%;
+    }
+
+    nav {
+      display: none;
+    }
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    padding: 10vh 4vh;
+    text-align: center;
+  }
+
+  .formulaire #submit {
+    font-size: 1.2rem;
+  }
+
+  footer .copyright a {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+
+
+  .marge {
+    padding: 0 2vh;
+  }
+
+  / Header /
+  header {
+    height: 90vh;
+
+    h1 {
+      font-size: 1.2rem;
+      padding: 8vh 2vh;
+      text-align: center;
+    }
+  }
+  #toggle {
+    top: 3vh;
+    right: 3vh;
+    width: 3.5vh;
+
+    &::before,
+    &::after {
+      width: 3.5vh;
+    }
+  }
+ #navigation ul a {
+    font-size: 1.2rem;
+  }
+
+  .formulaire {
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    div {
+      font-size: 1rem;
+    }
+
+    #submit {
+      font-size: 1rem;
+      padding: 0.8vh 2vh;
+    }
+  }
+  footer {
+    .footer svg {
+      width: 2.5vh;
+      height: 2.5vh;
+    }
+
+    .copyright a {
+      font-size: 0.9rem;
+      padding: 1vh;
+    }
+  }
+  @media screen and (max-width: 375px) {
+
+  .marge {
+    padding: 0 3vh;
+  }
+  header {
+    height: 95vh;
+
+    h1 {
+      font-size: 1.4rem;
+      padding: 10vh 3vh;
+      text-align: center;
+    }
+  }
+  #toggle {
+    top: 3.5vh;
+    right: 3.5vh;
+    width: 3.8vh;
+
+    &::before,
+    &::after {
+      width: 3.8vh;
+    }
+  }
+  #navigation {
+    ul {
+      gap: 3.5vh;
+
+      a {
+        font-size: 1.35rem;
+      }
+    }
+  }
+  .formulaire {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    div {
+      font-size: 1.05rem;
+    }
+
+    #submit {
+      font-size: 1.05rem;
+      padding: 1vh 2vh;
+    }
+  }
+
+  / Footer */
+  footer {
+    .footer svg {
+      width: 2.8vh;
+      height: 2.8vh;
+    }
+
+    .copyright a {
+      font-size: 1rem;
+      padding: 1.5vh;
+      text-align: center;
+    }
+  }
+}
+}
